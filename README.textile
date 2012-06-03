@@ -8,31 +8,23 @@ test-unit-activesupport is an ActiveSupport adapter for test-unit 2. You can use
 
 h2. Install
 
-Add the following codes to your Gemfile:
+Require @test/unit/active_support@ before using ActiveSupport:
 
 <pre>
-group :development, :test do
-  gem "test-unit-activesupport"
-end
+require "test/unit/active_support"
+require "active_support"
 </pre>
 
-Update bundled gems:
-
-<pre>
-% bundle update
-</pre>
-
-Add @"require 'test/unit/active_support'"@ to your test codes:
+Now you can use full test-unit 2.x features with ActiveSupport.
 
 <pre>
 require 'test/unit/active_support'
+# require "active_support" ...
 
 class YourTest < ActiveSupport::TestCase
   # ...
 end
 </pre>
-
-Now you can use full test-unit 2.x features with ActiveSupport.
 
 h2. License
 
