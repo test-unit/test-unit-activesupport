@@ -10,15 +10,13 @@ h2. Install
 
 Require @test/unit/active_support@ before using ActiveSupport:
 
-<pre>
-require "test/unit/active_support"
+<pre>require "test/unit/active_support"
 require "active_support"
 </pre>
 
 Now you can use full test-unit 2.x features with ActiveSupport.
 
-<pre>
-require 'test/unit/active_support'
+<pre>require 'test/unit/active_support'
 # require "active_support" ...
 
 class YourTest < ActiveSupport::TestCase
