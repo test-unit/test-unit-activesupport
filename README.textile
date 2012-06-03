@@ -1,0 +1,45 @@
+h1. test-unit-activesupport
+
+"Web site":http://test-unit.rubyforge.org/#test-unit-activesupport
+
+h2. Description
+
+test-unit-activesupport is an ActiveSupport adapter for test-unit 2. You can use full test-unit 2 features with @ActiveSupport::TestCase@.
+
+h2. Install
+
+Add the following codes to your Gemfile:
+
+<pre>
+group :development, :test do
+  gem "test-unit-activesupport"
+end
+</pre>
+
+Update bundled gems:
+
+<pre>
+% bundle update
+</pre>
+
+Add @"require 'test/unit/active_support'"@ to your test codes:
+
+<pre>
+require 'test/unit/active_support'
+
+class YourTest < ActiveSupport::TestCase
+  # ...
+end
+</pre>
+
+Now you can use full test-unit 2.x features with ActiveSupport.
+
+h2. License
+
+LGPLv2.1 or later.
+
+(Kouhei Sutou has a right to change the license including contributed patches.)
+
+h2. Authors
+
+* Kouhei Sutou

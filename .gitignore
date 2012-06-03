@@ -1,0 +1,6 @@
+/pkg/
+/*.gemspec
+/.yardoc/
+/doc/po/*.pot
+/doc/reference/
+/doc/html/test-unit-activesupport/
