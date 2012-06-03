@@ -4,15 +4,15 @@
 # Kouhei Sutou <kou@clear-code.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-06-03 21:14+0900\n"
-"PO-Revision-Date: 2012-06-03 21:22+0900\n"
+"Project-Id-Version: test-unit-activesupport 1.0.0\n"
+"POT-Creation-Date: 2012-06-03 21:46+0900\n"
+"PO-Revision-Date: 2012-06-03 21:46+0900\n"
 "Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
 "Language-Team: Japanese\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:6(title)
@@ -49,11 +49,11 @@ msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:37(span)
 #: doc/reference/en/Test/Unit.html:91(a)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:83(span)
+#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:77(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:35(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:35(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:35(span)
-#: doc/reference/en/file.README.html:83(span)
+#: doc/reference/en/file.README.html:77(span)
 #: doc/reference/en/_index.html:91(a)
 msgid "ActiveSupport"
 msgstr ""
@@ -163,8 +163,9 @@ msgid "VERSION ="
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:95(span)
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
+#: doc/reference/en/index.html:70(span) doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:70(span)
+#: doc/reference/en/file.README.html:71(span)
 msgid "\""
 msgstr ""
 
@@ -421,9 +422,7 @@ msgstr ""
 msgid "File: README"
 msgstr ""
 
-#: doc/reference/en/index.html:64(h1) doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:64(h1)
-#: doc/reference/en/file.README.html:72(span)
+#: doc/reference/en/index.html:64(h1) doc/reference/en/file.README.html:64(h1)
 #: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
 #: doc/reference/en/_index.html:59(h1)
 msgid "test-unit-activesupport"
@@ -452,133 +451,100 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
-#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
-msgid "Add the following codes to your Gemfile:"
-msgstr ""
-
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid "group"
-msgstr ""
-
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid ":development"
-msgstr ""
-
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid ","
-msgstr ""
-
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid ":test"
-msgstr ""
-
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid "do"
-msgstr ""
-
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
-msgid "gem"
-msgstr ""
-
-#: doc/reference/en/index.html:73(span) doc/reference/en/index.html:85(span)
-#: doc/reference/en/file.README.html:73(span)
-#: doc/reference/en/file.README.html:85(span)
-msgid "end"
-msgstr ""
-
-#: doc/reference/en/index.html:75(p) doc/reference/en/file.README.html:75(p)
-msgid "Update bundled gems:"
-msgstr ""
-
-#: doc/reference/en/index.html:76(code)
-#: doc/reference/en/file.README.html:76(code)
-msgid "% bundle update"
-msgstr ""
-
-#: doc/reference/en/index.html:79(code)
-#: doc/reference/en/file.README.html:79(code)
-msgid "\"require 'test/unit/active_support'\""
-msgstr ""
-
-#: doc/reference/en/index.html:79(p) doc/reference/en/file.README.html:79(p)
-msgid "Add <placeholder-1/> to your test codes:"
-msgstr ""
-
-#: doc/reference/en/index.html:81(span)
-#: doc/reference/en/file.README.html:81(span)
-msgid "require"
-msgstr ""
-
-#: doc/reference/en/index.html:81(span)
-#: doc/reference/en/file.README.html:81(span)
-msgid "'"
-msgstr ""
-
-#: doc/reference/en/index.html:81(span)
-#: doc/reference/en/file.README.html:81(span)
+#: doc/reference/en/index.html:69(code) doc/reference/en/index.html:70(span)
+#: doc/reference/en/index.html:74(span)
+#: doc/reference/en/file.README.html:69(code)
+#: doc/reference/en/file.README.html:70(span)
+#: doc/reference/en/file.README.html:74(span)
 msgid "test/unit/active_support"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "class"
+#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
+msgid "Require <placeholder-1/> before using ActiveSupport:"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "YourTest"
+#: doc/reference/en/index.html:70(span) doc/reference/en/index.html:71(span)
+#: doc/reference/en/index.html:74(span)
+#: doc/reference/en/file.README.html:70(span)
+#: doc/reference/en/file.README.html:71(span)
+#: doc/reference/en/file.README.html:74(span)
+msgid "require"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "&lt;"
+#: doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:71(span)
+msgid "active_support"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/MiniTest.html:95(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "::"
-msgstr ""
-
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "TestCase"
-msgstr ""
-
-#: doc/reference/en/index.html:84(span)
-#: doc/reference/en/file.README.html:84(span)
-msgid "# ..."
-msgstr ""
-
-#: doc/reference/en/index.html:87(p) doc/reference/en/file.README.html:87(p)
+#: doc/reference/en/index.html:73(p) doc/reference/en/file.README.html:73(p)
 msgid "Now you can use full test-unit 2.x features with ActiveSupport."
 msgstr ""
 
-#: doc/reference/en/index.html:88(h2) doc/reference/en/file.README.html:88(h2)
+#: doc/reference/en/index.html:74(span)
+#: doc/reference/en/file.README.html:74(span)
+msgid "'"
+msgstr ""
+
+#: doc/reference/en/index.html:75(span)
+#: doc/reference/en/file.README.html:75(span)
+msgid "# require \"active_support\" ..."
+msgstr ""
+
+#: doc/reference/en/index.html:77(span)
+#: doc/reference/en/file.README.html:77(span)
+msgid "class"
+msgstr ""
+
+#: doc/reference/en/index.html:77(span)
+#: doc/reference/en/file.README.html:77(span)
+msgid "YourTest"
+msgstr ""
+
+#: doc/reference/en/index.html:77(span)
+#: doc/reference/en/file.README.html:77(span)
+msgid "&lt;"
+msgstr ""
+
+#: doc/reference/en/index.html:77(span)
+#: doc/reference/en/MiniTest.html:95(span)
+#: doc/reference/en/file.README.html:77(span)
+msgid "::"
+msgstr ""
+
+#: doc/reference/en/index.html:77(span)
+#: doc/reference/en/file.README.html:77(span)
+msgid "TestCase"
+msgstr ""
+
+#: doc/reference/en/index.html:78(span)
+#: doc/reference/en/file.README.html:78(span)
+msgid "# ..."
+msgstr ""
+
+#: doc/reference/en/index.html:79(span)
+#: doc/reference/en/file.README.html:79(span)
+msgid "end"
+msgstr ""
+
+#: doc/reference/en/index.html:81(h2) doc/reference/en/file.README.html:81(h2)
 msgid "License"
 msgstr ""
 
-#: doc/reference/en/index.html:89(p) doc/reference/en/file.README.html:89(p)
+#: doc/reference/en/index.html:82(p) doc/reference/en/file.README.html:82(p)
 msgid "LGPLv2.1 or later."
 msgstr ""
 
-#: doc/reference/en/index.html:90(p) doc/reference/en/file.README.html:90(p)
+#: doc/reference/en/index.html:83(p) doc/reference/en/file.README.html:83(p)
 msgid ""
 "(Kouhei Sutou has a right to change the license including contributed "
 "patches.)"
 msgstr ""
 
-#: doc/reference/en/index.html:91(h2) doc/reference/en/file.README.html:91(h2)
+#: doc/reference/en/index.html:84(h2) doc/reference/en/file.README.html:84(h2)
 msgid "Authors"
 msgstr ""
 
-#: doc/reference/en/index.html:93(li) doc/reference/en/file.README.html:93(li)
+#: doc/reference/en/index.html:86(li) doc/reference/en/file.README.html:86(li)
 msgid "Kouhei Sutou"
 msgstr ""
 
