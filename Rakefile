@@ -28,6 +28,12 @@ require "packnga"
 
 base_dir = File.join(File.dirname(__FILE__))
 
+class Bundler::GemHelper
+  def version_tag
+    "#{version}"
+  end
+end
+
 helper = Bundler::GemHelper.new(base_dir)
 helper.install
 spec = helper.gemspec
