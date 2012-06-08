@@ -23,8 +23,8 @@ require "active_support/testing/setup_and_teardown"
 
 module ActiveSupport::Testing::SetupAndTeardown
   module ClassMethods
-    remove_method :setup
-    remove_method :teardown
+    remove_method :setup if method_defined? :setup
+    remove_method :teardown if method_defined? :teardown
   end
 
   if const_defined?(:ForClassicTestUnit)
