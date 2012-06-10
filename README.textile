@@ -33,3 +33,7 @@ LGPLv2.1 or later.
 h2. Authors
 
 * Kouhei Sutou
+
+h2. Thanks
+
+* Michael Grosser
