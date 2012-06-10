@@ -22,9 +22,11 @@ require "test-unit"
 require "active_support/testing/setup_and_teardown"
 
 module ActiveSupport::Testing::SetupAndTeardown
-  module ClassMethods
-    remove_method :setup
-    remove_method :teardown
+  if const_defined?(:ClassMethods)
+    module ClassMethods
+      remove_method :setup
+      remove_method :teardown
+    end
   end
 
   if const_defined?(:ForClassicTestUnit)
