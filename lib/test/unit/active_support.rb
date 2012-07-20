@@ -57,3 +57,33 @@ class ActiveSupport::TestCase
     super
   end
 end
+
+class Test::Unit::TestCase
+  # REMOVE ME after https://github.com/freerange/mocha/pull/89 is merged.
+  if method_defined?(:run_before_mocha) and not method_defined?(:cleanup_mocha)
+    alias_method :run, :run_before_mocha
+    remove_method :run_before_mocha
+
+    exception_handler(:handle_mocha_expectation_error)
+
+    cleanup :cleanup_mocha, :after => :append
+    teardown :teardown_mocha, :after => :append
+
+    private
+    def cleanup_mocha
+      assertion_counter = Mocha::Integration::TestUnit::AssertionCounter.new(current_result)
+      mocha_verify(assertion_counter)
+    end
+
+    def teardown_mocha
+      mocha_teardown
+    end
+
+    def handle_mocha_expectation_error(exception)
+      return false unless exception.is_a?(Mocha::ExpectationError)
+      problem_occurred
+      add_failure(exception.message, exception.backtrace)
+      true
+    end
+  end
+end
