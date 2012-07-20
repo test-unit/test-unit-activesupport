@@ -1,5 +1,19 @@
 h1. News
 
+h2(#1-0-1). 1.0.1 - 2012-07-20
+
+ActiveSupport 2.3.14 support improved release.
+
+h3. Improvements
+
+* Supported ActiveSupport 2.3.14.
+  [GitHub#1] [GitHub#2]
+  [Reported by Michael Grosser]
+
+h3. Thanks
+
+* Michael Grosser
+
 h2(#1-0-0). 1.0.0 - 2012-06-03
 
 The first release!!!
