@@ -43,3 +43,17 @@ unless ActiveSupport::Testing::SetupAndTeardown.const_defined?(:ForClassicTestUn
 end
 
 require 'active_support/test_case'
+
+class Test::Unit::Error
+  if method_defined?(:message_without_silenced_deprecation)
+    undef_method :message
+    alias_method :message, :message_without_silenced_deprecation
+  end
+end
+
+class ActiveSupport::TestCase
+  def valid?
+    return false if @method_name == "default_test"
+    super
+  end
+end
