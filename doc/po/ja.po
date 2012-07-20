@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: test-unit-activesupport 1.0.0\n"
-"POT-Creation-Date: 2012-06-03 21:46+0900\n"
-"PO-Revision-Date: 2012-06-03 21:46+0900\n"
+"POT-Creation-Date: 2012-07-20 21:03+0900\n"
+"PO-Revision-Date: 2012-07-20 21:04+0900\n"
 "Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -20,6 +20,8 @@ msgid "Module: Test::Unit::ActiveSupport &mdash; test-unit-activesupport"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:17(script)
+#: doc/reference/en/Test/Unit/TestCase.html:17(script)
+#: doc/reference/en/Test/Unit/Error.html:17(script)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:17(script)
 msgid ""
 "hasFrames = window.top.frames.main ? true : false; relpath = '../../'; "
@@ -31,34 +33,42 @@ msgid "Index (A)"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:35(a)
+#: doc/reference/en/Test/Unit/TestCase.html:35(a)
+#: doc/reference/en/Test/Unit/Error.html:35(a)
 #: doc/reference/en/Test/Unit.html:35(a)
 #: doc/reference/en/top-level-namespace.html:88(a)
 #: doc/reference/en/class_list.html:48(a)
 #: doc/reference/en/class_list.html:48(small)
 #: doc/reference/en/Test.html:37(span) doc/reference/en/MiniTest.html:95(span)
-#: doc/reference/en/_index.html:164(a)
+#: doc/reference/en/_index.html:179(a)
 msgid "Test"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:35(a)
+#: doc/reference/en/Test/Unit/TestCase.html:35(a)
+#: doc/reference/en/Test/Unit/Error.html:35(a)
 #: doc/reference/en/Test/Unit.html:37(span)
 #: doc/reference/en/class_list.html:48(a) doc/reference/en/Test.html:111(a)
-#: doc/reference/en/MiniTest.html:95(span) doc/reference/en/_index.html:177(a)
+#: doc/reference/en/MiniTest.html:95(span) doc/reference/en/_index.html:209(a)
 msgid "Unit"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:37(span)
 #: doc/reference/en/Test/Unit.html:91(a)
+#: doc/reference/en/class_list.html:48(small)
 #: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:77(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:35(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:35(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:35(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:35(span)
 #: doc/reference/en/file.README.html:77(span)
 #: doc/reference/en/_index.html:91(a)
 msgid "ActiveSupport"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:40(span)
+#: doc/reference/en/Test/Unit/TestCase.html:40(span)
+#: doc/reference/en/Test/Unit/Error.html:40(span)
 #: doc/reference/en/Test/Unit.html:40(span)
 #: doc/reference/en/file.news.html:38(span)
 #: doc/reference/en/top-level-namespace.html:40(span)
@@ -67,12 +77,15 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:40(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:40(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:40(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:40(span)
 #: doc/reference/en/file.README.html:38(span)
 #: doc/reference/en/_index.html:33(span)
 msgid "("
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:40(a)
+#: doc/reference/en/Test/Unit/TestCase.html:40(a)
+#: doc/reference/en/Test/Unit/Error.html:40(a)
 #: doc/reference/en/Test/Unit.html:40(a) doc/reference/en/file.news.html:38(a)
 #: doc/reference/en/top-level-namespace.html:40(a)
 #: doc/reference/en/Test.html:40(a) doc/reference/en/index.html:38(a)
@@ -80,11 +93,14 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:40(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:40(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:40(a)
+#: doc/reference/en/ActiveSupport/TestCase.html:40(a)
 #: doc/reference/en/file.README.html:38(a) doc/reference/en/_index.html:33(a)
 msgid "no frames"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:40(span)
+#: doc/reference/en/Test/Unit/TestCase.html:40(span)
+#: doc/reference/en/Test/Unit/Error.html:40(span)
 #: doc/reference/en/Test/Unit.html:40(span)
 #: doc/reference/en/file.news.html:38(span)
 #: doc/reference/en/top-level-namespace.html:40(span)
@@ -93,12 +109,15 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:40(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:40(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:40(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:40(span)
 #: doc/reference/en/file.README.html:38(span)
 #: doc/reference/en/_index.html:33(span)
 msgid ")"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:46(a)
+#: doc/reference/en/Test/Unit/TestCase.html:46(a)
+#: doc/reference/en/Test/Unit/Error.html:46(a)
 #: doc/reference/en/Test/Unit.html:46(a) doc/reference/en/file.news.html:44(a)
 #: doc/reference/en/top-level-namespace.html:46(a)
 #: doc/reference/en/class_list.html:28(h1) doc/reference/en/Test.html:46(a)
@@ -106,11 +125,14 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:46(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:46(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:46(a)
+#: doc/reference/en/ActiveSupport/TestCase.html:46(a)
 #: doc/reference/en/file.README.html:44(a) doc/reference/en/_index.html:39(a)
 msgid "Class List"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:51(a)
+#: doc/reference/en/Test/Unit/TestCase.html:51(a)
+#: doc/reference/en/Test/Unit/Error.html:51(a)
 #: doc/reference/en/Test/Unit.html:51(a) doc/reference/en/file.news.html:49(a)
 #: doc/reference/en/top-level-namespace.html:51(a)
 #: doc/reference/en/method_list.html:28(h1) doc/reference/en/Test.html:51(a)
@@ -118,11 +140,14 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:51(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:51(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:51(a)
+#: doc/reference/en/ActiveSupport/TestCase.html:51(a)
 #: doc/reference/en/file.README.html:49(a) doc/reference/en/_index.html:44(a)
 msgid "Method List"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:56(a)
+#: doc/reference/en/Test/Unit/TestCase.html:56(a)
+#: doc/reference/en/Test/Unit/Error.html:56(a)
 #: doc/reference/en/Test/Unit.html:56(a) doc/reference/en/file.news.html:54(a)
 #: doc/reference/en/top-level-namespace.html:56(a)
 #: doc/reference/en/Test.html:56(a) doc/reference/en/index.html:54(a)
@@ -130,6 +155,7 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:56(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:56(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:56(a)
+#: doc/reference/en/ActiveSupport/TestCase.html:56(a)
 #: doc/reference/en/file.README.html:54(a)
 #: doc/reference/en/file_list.html:28(h1) doc/reference/en/_index.html:49(a)
 msgid "File List"
@@ -140,11 +166,14 @@ msgid "Module: Test::Unit::ActiveSupport"
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:81(dt)
+#: doc/reference/en/Test/Unit/TestCase.html:96(dt)
+#: doc/reference/en/Test/Unit/Error.html:96(dt)
 #: doc/reference/en/Test/Unit.html:81(dt) doc/reference/en/Test.html:81(dt)
 #: doc/reference/en/MiniTest.html:81(dt)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:81(dt)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:81(dt)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:81(dt)
+#: doc/reference/en/ActiveSupport/TestCase.html:96(dt)
 msgid "Defined in:"
 msgstr ""
 
@@ -164,13 +193,94 @@ msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:95(span)
 #: doc/reference/en/index.html:70(span) doc/reference/en/index.html:71(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
 #: doc/reference/en/file.README.html:70(span)
 #: doc/reference/en/file.README.html:71(span)
 msgid "\""
 msgstr ""
 
 #: doc/reference/en/Test/Unit/ActiveSupport.html:95(span)
-msgid "1.0.0"
+msgid "1.0.1"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:6(title)
+msgid "Class: Test::Unit::TestCase &mdash; test-unit-activesupport"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:34(a)
+#: doc/reference/en/Test.html:34(a)
+#: doc/reference/en/ActiveSupport/TestCase.html:34(a)
+msgid "Index (T)"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:37(span)
+#: doc/reference/en/Test/Unit.html:95(a)
+#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:77(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:37(span)
+#: doc/reference/en/file.README.html:77(span)
+#: doc/reference/en/_index.html:184(a) doc/reference/en/_index.html:191(a)
+msgid "TestCase"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:66(h1)
+msgid "Class: Test::Unit::TestCase"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:74(dt)
+#: doc/reference/en/Test/Unit/Error.html:74(dt)
+#: doc/reference/en/ActiveSupport/TestCase.html:74(dt)
+msgid "Inherits:"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:76(span)
+#: doc/reference/en/Test/Unit/TestCase.html:79(li)
+#: doc/reference/en/Test/Unit/Error.html:76(span)
+#: doc/reference/en/Test/Unit/Error.html:79(li)
+#: doc/reference/en/ActiveSupport/TestCase.html:76(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:79(li)
+msgid "Object"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:81(li)
+msgid "Test::Unit::TestCase"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:84(a)
+#: doc/reference/en/Test/Unit/Error.html:84(a)
+#: doc/reference/en/ActiveSupport/TestCase.html:84(a)
+msgid "show all"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/TestCase.html:97(dd)
+#: doc/reference/en/Test/Unit/Error.html:97(dd)
+#: doc/reference/en/MiniTest.html:82(dd)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:82(dd)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:82(dd)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:82(dd)
+#: doc/reference/en/ActiveSupport/TestCase.html:97(dd)
+msgid "lib/test/unit/active_support.rb"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Error.html:6(title)
+msgid "Class: Test::Unit::Error &mdash; test-unit-activesupport"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Error.html:34(a)
+msgid "Index (E)"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Error.html:37(span)
+#: doc/reference/en/Test/Unit.html:95(a)
+#: doc/reference/en/class_list.html:48(a) doc/reference/en/_index.html:121(a)
+msgid "Error"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Error.html:66(h1)
+msgid "Class: Test::Unit::Error"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Error.html:81(li)
+msgid "Test::Unit::Error"
 msgstr ""
 
 #: doc/reference/en/Test/Unit.html:6(title)
@@ -178,6 +288,7 @@ msgid "Module: Test::Unit &mdash; test-unit-activesupport"
 msgstr ""
 
 #: doc/reference/en/Test/Unit.html:17(script)
+#: doc/reference/en/ActiveSupport/TestCase.html:17(script)
 msgid ""
 "hasFrames = window.top.frames.main ? true : false; relpath = '../'; "
 "framesUrl = \"../frames.html#!\" + escape(window.location.href);"
@@ -203,6 +314,20 @@ msgstr ""
 #: doc/reference/en/Test.html:111(strong)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:91(strong)
 msgid "Modules:"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:95(strong)
+msgid "Classes:"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:88(p)
+msgid ""
+"<placeholder-1/> <span class=\"object_link\"><placeholder-2/></span>\n"
+"    \n"
+"  \n"
+"    \n"
+"      <placeholder-3/> <span class=\"object_link\"><placeholder-4/></span>, "
+"<span class=\"object_link\"><placeholder-5/></span>"
 msgstr ""
 
 #: doc/reference/en/file.news.html:6(title)
@@ -236,10 +361,38 @@ msgid "News"
 msgstr "お知らせ"
 
 #: doc/reference/en/file.news.html:65(h2)
-msgid "1.0.0 – 2012-06-03"
+msgid "1.0.1 – 2012-07-20"
 msgstr ""
 
 #: doc/reference/en/file.news.html:66(p)
+msgid "ActiveSupport 2.3.14 support improved release."
+msgstr "ActiveSupport 2.3.14サポートを強化したリリース。"
+
+#: doc/reference/en/file.news.html:67(h3)
+msgid "Improvements"
+msgstr "改良"
+
+#: doc/reference/en/file.news.html:69(li)
+msgid ""
+"Supported ActiveSupport 2.3.14. [GitHub#1] [GitHub#2] [Reported by Michael "
+"Grosser]"
+msgstr "ActiveSupport 2.3.14に対応。 [GitHub#1] [GitHub#2] [Michael Grosserさんが報告]"
+
+#: doc/reference/en/file.news.html:73(h3) doc/reference/en/index.html:88(h2)
+#: doc/reference/en/file.README.html:88(h2)
+msgid "Thanks"
+msgstr "感謝"
+
+#: doc/reference/en/file.news.html:75(li) doc/reference/en/index.html:90(li)
+#: doc/reference/en/file.README.html:90(li)
+msgid "Michael Grosser"
+msgstr "Michael Grosserさん"
+
+#: doc/reference/en/file.news.html:77(h2)
+msgid "1.0.0 – 2012-06-03"
+msgstr ""
+
+#: doc/reference/en/file.news.html:78(p)
 msgid "The first release!!!"
 msgstr "最初のリリース！"
 
@@ -256,7 +409,7 @@ msgstr ""
 
 #: doc/reference/en/top-level-namespace.html:88(a)
 #: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/MiniTest.html:37(span) doc/reference/en/_index.html:136(a)
+#: doc/reference/en/MiniTest.html:37(span) doc/reference/en/_index.html:151(a)
 msgid "MiniTest"
 msgstr ""
 
@@ -299,6 +452,23 @@ msgstr ""
 msgid "Search: <input type=\"text\"/>"
 msgstr ""
 
+#: doc/reference/en/method_list.html:50(a)
+msgid "#valid?"
+msgstr ""
+
+#: doc/reference/en/method_list.html:52(small)
+#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:67(code)
+#: doc/reference/en/ActiveSupport/TestCase.html:81(li)
+#: doc/reference/en/file.README.html:67(code)
+msgid "ActiveSupport::TestCase"
+msgstr ""
+
+#: doc/reference/en/class_list.html:48(li)
+msgid ""
+"<span class=\"object_link\"><placeholder-1/></span> &lt; "
+"Object<placeholder-2/>"
+msgstr ""
+
 #: doc/reference/en/class_list.html:48(a)
 #: doc/reference/en/class_list.html:48(small)
 msgid "ActiveSupport::Testing::SetupAndTeardown"
@@ -318,7 +488,7 @@ msgstr ""
 #: doc/reference/en/class_list.html:48(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:91(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(span)
-#: doc/reference/en/_index.html:121(a)
+#: doc/reference/en/_index.html:136(a)
 msgid "ForClassicTestUnit"
 msgstr ""
 
@@ -328,10 +498,6 @@ msgstr ""
 
 #: doc/reference/en/Test.html:6(title)
 msgid "Module: Test &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/Test.html:34(a)
-msgid "Index (T)"
 msgstr ""
 
 #: doc/reference/en/Test.html:66(h1)
@@ -436,11 +602,6 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: doc/reference/en/index.html:67(code)
-#: doc/reference/en/file.README.html:67(code)
-msgid "ActiveSupport::TestCase"
-msgstr ""
-
 #: doc/reference/en/index.html:67(p) doc/reference/en/file.README.html:67(p)
 msgid ""
 "test-unit-activesupport is an ActiveSupport adapter for test-unit 2. You can "
@@ -511,17 +672,13 @@ msgstr ""
 msgid "::"
 msgstr ""
 
-#: doc/reference/en/index.html:77(span)
-#: doc/reference/en/file.README.html:77(span)
-msgid "TestCase"
-msgstr ""
-
 #: doc/reference/en/index.html:78(span)
 #: doc/reference/en/file.README.html:78(span)
 msgid "# ..."
 msgstr ""
 
 #: doc/reference/en/index.html:79(span)
+#: doc/reference/en/ActiveSupport/TestCase.html:196(span)
 #: doc/reference/en/file.README.html:79(span)
 msgid "end"
 msgstr ""
@@ -560,13 +717,6 @@ msgstr ""
 msgid "Module: MiniTest"
 msgstr ""
 
-#: doc/reference/en/MiniTest.html:82(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:82(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:82(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:82(dd)
-msgid "lib/test/unit/active_support.rb"
-msgstr ""
-
 #: doc/reference/en/MiniTest.html:92(dt)
 msgid "Assertion ="
 msgstr ""
@@ -594,7 +744,7 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:37(span)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:35(a)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:35(a)
-#: doc/reference/en/_index.html:149(a)
+#: doc/reference/en/_index.html:164(a)
 msgid "SetupAndTeardown"
 msgstr ""
 
@@ -637,6 +787,94 @@ msgstr ""
 msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit"
 msgstr ""
 
+#: doc/reference/en/ActiveSupport/TestCase.html:6(title)
+msgid "Class: ActiveSupport::TestCase &mdash; test-unit-activesupport"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:66(h1)
+msgid "Class: ActiveSupport::TestCase"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:112(a)
+msgid "collapse"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:112(small)
+#: doc/reference/en/ActiveSupport/TestCase.html:171(span)
+msgid "(<placeholder-1/>)"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:110(h2)
+msgid "Instance Method Summary <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:120(strong)
+#: doc/reference/en/ActiveSupport/TestCase.html:151(strong)
+#: doc/reference/en/ActiveSupport/TestCase.html:193(span)
+msgid "valid?"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:120(a)
+msgid "- (Boolean) <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:145(h2)
+msgid "Instance Method Details"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:151(tt)
+#: doc/reference/en/ActiveSupport/TestCase.html:171(tt)
+msgid "Boolean"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:149(h3)
+msgid "- (<placeholder-1/>) <placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:165(p)
+msgid "Returns:"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:182(pre)
+msgid "55 56 57 58"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:191(span)
+msgid "# File 'lib/test/unit/active_support.rb', line 55"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:193(span)
+msgid "def"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
+msgid "return"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
+msgid "false"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
+msgid "if"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
+msgid "@method_name"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
+msgid "=="
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
+msgid "default_test"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/TestCase.html:195(span)
+msgid "super"
+msgstr ""
+
 #: doc/reference/en/frames.html:16(frameset)
 msgid ""
 "' + '<frame name=\"list\" src=\"class_list.html\"/>' + '<frame name=\"main\" "
@@ -675,6 +913,8 @@ msgid "A"
 msgstr ""
 
 #: doc/reference/en/_index.html:93(small)
+#: doc/reference/en/_index.html:123(small)
+#: doc/reference/en/_index.html:193(small)
 msgid "(Test::Unit)"
 msgstr ""
 
@@ -683,35 +923,43 @@ msgid "C"
 msgstr ""
 
 #: doc/reference/en/_index.html:108(small)
-#: doc/reference/en/_index.html:123(small)
+#: doc/reference/en/_index.html:138(small)
 msgid "(ActiveSupport::Testing::SetupAndTeardown)"
 msgstr ""
 
 #: doc/reference/en/_index.html:117(li)
-msgid "F"
+msgid "E"
 msgstr ""
 
 #: doc/reference/en/_index.html:132(li)
+msgid "F"
+msgstr ""
+
+#: doc/reference/en/_index.html:147(li)
 msgid "M"
 msgstr ""
 
-#: doc/reference/en/_index.html:145(li)
+#: doc/reference/en/_index.html:160(li)
 msgid "S"
 msgstr ""
 
-#: doc/reference/en/_index.html:151(small)
+#: doc/reference/en/_index.html:166(small)
 msgid "(ActiveSupport::Testing)"
 msgstr ""
 
-#: doc/reference/en/_index.html:160(li)
+#: doc/reference/en/_index.html:175(li)
 msgid "T"
 msgstr ""
 
-#: doc/reference/en/_index.html:173(li)
+#: doc/reference/en/_index.html:186(small)
+msgid "(ActiveSupport)"
+msgstr ""
+
+#: doc/reference/en/_index.html:205(li)
 msgid "U"
 msgstr ""
 
-#: doc/reference/en/_index.html:179(small)
+#: doc/reference/en/_index.html:211(small)
 msgid "(Test)"
 msgstr ""
 
