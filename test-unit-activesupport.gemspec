@@ -47,4 +47,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("test-unit-notify")
   spec.add_development_dependency("rake")
   spec.add_development_dependency("packnga")
+  spec.add_development_dependency("RedCloth")
 end
