@@ -1,6 +1,6 @@
 h1. test-unit-activesupport
 
-"Web site":http://test-unit.rubyforge.org/#test-unit-activesupport
+"Web site":https://github.com/test-unit/test-unit-activesupport
 
 h2. Description
 
