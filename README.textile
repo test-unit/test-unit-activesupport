@@ -1,10 +1,10 @@
 h1. test-unit-activesupport
 
-"Web site":https://github.com/test-unit/test-unit-activesupport
+"Web site":https://test-unit.github.io/#test-unit-activesupport
 
 h2. Description
 
-test-unit-activesupport is an ActiveSupport adapter for test-unit 2. You can use full test-unit 2 features with @ActiveSupport::TestCase@.
+test-unit-activesupport is an ActiveSupport adapter for test-unit 3. You can use full test-unit 3 features with @ActiveSupport::TestCase@.
 
 h2. Install
 
