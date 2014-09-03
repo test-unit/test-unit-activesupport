@@ -14,7 +14,7 @@ Require @test/unit/active_support@ before using ActiveSupport:
 require "active_support"
 </pre>
 
-Now you can use full test-unit 2.x features with ActiveSupport.
+Now you can use full test-unit 3.x features with ActiveSupport.
 
 <pre>require 'test/unit/active_support'
 # require "active_support" ...
