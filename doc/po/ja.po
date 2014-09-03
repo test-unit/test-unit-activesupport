@@ -1,13 +1,14 @@
-# ja.po for test-unit-rails Reference.
-# Copyright (C) 2012 Kouhei Sutou
-# This file is distributed under the same license as the test-unit-activesupport package.
-# Kouhei Sutou <kou@clear-code.com>, 2012.
+# Japanese translations for PACKAGE package.
+# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: test-unit-activesupport 1.0.0\n"
-"POT-Creation-Date: 2012-07-20 21:03+0900\n"
-"PO-Revision-Date: 2012-07-20 21:04+0900\n"
-"Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2014-09-03 23:29+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -15,955 +16,134 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: doc/reference/en/Test/Unit/ActiveSupport.html:6(title)
-msgid "Module: Test::Unit::ActiveSupport &mdash; test-unit-activesupport"
+msgid "h1. test-unit-activesupport"
 msgstr ""
 
-#: doc/reference/en/Test/Unit/ActiveSupport.html:17(script)
-#: doc/reference/en/Test/Unit/TestCase.html:17(script)
-#: doc/reference/en/Test/Unit/Error.html:17(script)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:17(script)
+msgid "\"Web site\":https://test-unit.github.io/#test-unit-activesupport"
+msgstr ""
+
+msgid "h2. Description"
+msgstr ""
+
 msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = '../../'; "
-"framesUrl = \"../../frames.html#!\" + escape(window.location.href);"
+"test-unit-activesupport is an ActiveSupport adapter for test-unit 3. You can u"
+"se full test-unit 3 features with @ActiveSupport::TestCase@."
 msgstr ""
 
-#: doc/reference/en/Test/Unit/ActiveSupport.html:34(a)
-msgid "Index (A)"
+msgid "h2. Install"
 msgstr ""
 
-#: doc/reference/en/Test/Unit/ActiveSupport.html:35(a)
-#: doc/reference/en/Test/Unit/TestCase.html:35(a)
-#: doc/reference/en/Test/Unit/Error.html:35(a)
-#: doc/reference/en/Test/Unit.html:35(a)
-#: doc/reference/en/top-level-namespace.html:88(a)
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/class_list.html:48(small)
-#: doc/reference/en/Test.html:37(span) doc/reference/en/MiniTest.html:95(span)
-#: doc/reference/en/_index.html:179(a)
-msgid "Test"
+msgid "Require @test/unit/active_support@ before using ActiveSupport:"
 msgstr ""
 
-#: doc/reference/en/Test/Unit/ActiveSupport.html:35(a)
-#: doc/reference/en/Test/Unit/TestCase.html:35(a)
-#: doc/reference/en/Test/Unit/Error.html:35(a)
-#: doc/reference/en/Test/Unit.html:37(span)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/Test.html:111(a)
-#: doc/reference/en/MiniTest.html:95(span) doc/reference/en/_index.html:209(a)
-msgid "Unit"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:37(span)
-#: doc/reference/en/Test/Unit.html:91(a)
-#: doc/reference/en/class_list.html:48(small)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:77(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:35(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:35(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:35(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:35(span)
-#: doc/reference/en/file.README.html:77(span)
-#: doc/reference/en/_index.html:91(a)
-msgid "ActiveSupport"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:40(span)
-#: doc/reference/en/Test/Unit/TestCase.html:40(span)
-#: doc/reference/en/Test/Unit/Error.html:40(span)
-#: doc/reference/en/Test/Unit.html:40(span)
-#: doc/reference/en/file.news.html:38(span)
-#: doc/reference/en/top-level-namespace.html:40(span)
-#: doc/reference/en/Test.html:40(span) doc/reference/en/index.html:38(span)
-#: doc/reference/en/MiniTest.html:40(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:40(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:40(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:40(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:40(span)
-#: doc/reference/en/file.README.html:38(span)
-#: doc/reference/en/_index.html:33(span)
-msgid "("
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:40(a)
-#: doc/reference/en/Test/Unit/TestCase.html:40(a)
-#: doc/reference/en/Test/Unit/Error.html:40(a)
-#: doc/reference/en/Test/Unit.html:40(a) doc/reference/en/file.news.html:38(a)
-#: doc/reference/en/top-level-namespace.html:40(a)
-#: doc/reference/en/Test.html:40(a) doc/reference/en/index.html:38(a)
-#: doc/reference/en/MiniTest.html:40(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:40(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:40(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:40(a)
-#: doc/reference/en/ActiveSupport/TestCase.html:40(a)
-#: doc/reference/en/file.README.html:38(a) doc/reference/en/_index.html:33(a)
-msgid "no frames"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:40(span)
-#: doc/reference/en/Test/Unit/TestCase.html:40(span)
-#: doc/reference/en/Test/Unit/Error.html:40(span)
-#: doc/reference/en/Test/Unit.html:40(span)
-#: doc/reference/en/file.news.html:38(span)
-#: doc/reference/en/top-level-namespace.html:40(span)
-#: doc/reference/en/Test.html:40(span) doc/reference/en/index.html:38(span)
-#: doc/reference/en/MiniTest.html:40(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:40(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:40(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:40(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:40(span)
-#: doc/reference/en/file.README.html:38(span)
-#: doc/reference/en/_index.html:33(span)
-msgid ")"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:46(a)
-#: doc/reference/en/Test/Unit/TestCase.html:46(a)
-#: doc/reference/en/Test/Unit/Error.html:46(a)
-#: doc/reference/en/Test/Unit.html:46(a) doc/reference/en/file.news.html:44(a)
-#: doc/reference/en/top-level-namespace.html:46(a)
-#: doc/reference/en/class_list.html:28(h1) doc/reference/en/Test.html:46(a)
-#: doc/reference/en/index.html:44(a) doc/reference/en/MiniTest.html:46(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:46(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:46(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:46(a)
-#: doc/reference/en/ActiveSupport/TestCase.html:46(a)
-#: doc/reference/en/file.README.html:44(a) doc/reference/en/_index.html:39(a)
-msgid "Class List"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:51(a)
-#: doc/reference/en/Test/Unit/TestCase.html:51(a)
-#: doc/reference/en/Test/Unit/Error.html:51(a)
-#: doc/reference/en/Test/Unit.html:51(a) doc/reference/en/file.news.html:49(a)
-#: doc/reference/en/top-level-namespace.html:51(a)
-#: doc/reference/en/method_list.html:28(h1) doc/reference/en/Test.html:51(a)
-#: doc/reference/en/index.html:49(a) doc/reference/en/MiniTest.html:51(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:51(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:51(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:51(a)
-#: doc/reference/en/ActiveSupport/TestCase.html:51(a)
-#: doc/reference/en/file.README.html:49(a) doc/reference/en/_index.html:44(a)
-msgid "Method List"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:56(a)
-#: doc/reference/en/Test/Unit/TestCase.html:56(a)
-#: doc/reference/en/Test/Unit/Error.html:56(a)
-#: doc/reference/en/Test/Unit.html:56(a) doc/reference/en/file.news.html:54(a)
-#: doc/reference/en/top-level-namespace.html:56(a)
-#: doc/reference/en/Test.html:56(a) doc/reference/en/index.html:54(a)
-#: doc/reference/en/MiniTest.html:56(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:56(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:56(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:56(a)
-#: doc/reference/en/ActiveSupport/TestCase.html:56(a)
-#: doc/reference/en/file.README.html:54(a)
-#: doc/reference/en/file_list.html:28(h1) doc/reference/en/_index.html:49(a)
-msgid "File List"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:66(h1)
-msgid "Module: Test::Unit::ActiveSupport"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:81(dt)
-#: doc/reference/en/Test/Unit/TestCase.html:96(dt)
-#: doc/reference/en/Test/Unit/Error.html:96(dt)
-#: doc/reference/en/Test/Unit.html:81(dt) doc/reference/en/Test.html:81(dt)
-#: doc/reference/en/MiniTest.html:81(dt)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:81(dt)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:81(dt)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:81(dt)
-#: doc/reference/en/ActiveSupport/TestCase.html:96(dt)
-msgid "Defined in:"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:82(dd)
-#: doc/reference/en/Test/Unit.html:82(dd) doc/reference/en/Test.html:82(dd)
-msgid "lib/test/unit/active_support/version.rb"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:88(h2)
-#: doc/reference/en/MiniTest.html:88(h2)
-msgid "Constant Summary"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:92(dt)
-msgid "VERSION ="
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:95(span)
-#: doc/reference/en/index.html:70(span) doc/reference/en/index.html:71(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-#: doc/reference/en/file.README.html:70(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid "\""
-msgstr ""
-
-#: doc/reference/en/Test/Unit/ActiveSupport.html:95(span)
-msgid "1.0.1"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:6(title)
-msgid "Class: Test::Unit::TestCase &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:34(a)
-#: doc/reference/en/Test.html:34(a)
-#: doc/reference/en/ActiveSupport/TestCase.html:34(a)
-msgid "Index (T)"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:37(span)
-#: doc/reference/en/Test/Unit.html:95(a)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:77(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:37(span)
-#: doc/reference/en/file.README.html:77(span)
-#: doc/reference/en/_index.html:184(a) doc/reference/en/_index.html:191(a)
-msgid "TestCase"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:66(h1)
-msgid "Class: Test::Unit::TestCase"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:74(dt)
-#: doc/reference/en/Test/Unit/Error.html:74(dt)
-#: doc/reference/en/ActiveSupport/TestCase.html:74(dt)
-msgid "Inherits:"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:76(span)
-#: doc/reference/en/Test/Unit/TestCase.html:79(li)
-#: doc/reference/en/Test/Unit/Error.html:76(span)
-#: doc/reference/en/Test/Unit/Error.html:79(li)
-#: doc/reference/en/ActiveSupport/TestCase.html:76(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:79(li)
-msgid "Object"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:81(li)
-msgid "Test::Unit::TestCase"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:84(a)
-#: doc/reference/en/Test/Unit/Error.html:84(a)
-#: doc/reference/en/ActiveSupport/TestCase.html:84(a)
-msgid "show all"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/TestCase.html:97(dd)
-#: doc/reference/en/Test/Unit/Error.html:97(dd)
-#: doc/reference/en/MiniTest.html:82(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:82(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:82(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:82(dd)
-#: doc/reference/en/ActiveSupport/TestCase.html:97(dd)
-msgid "lib/test/unit/active_support.rb"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Error.html:6(title)
-msgid "Class: Test::Unit::Error &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Error.html:34(a)
-msgid "Index (E)"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Error.html:37(span)
-#: doc/reference/en/Test/Unit.html:95(a)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/_index.html:121(a)
-msgid "Error"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Error.html:66(h1)
-msgid "Class: Test::Unit::Error"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Error.html:81(li)
-msgid "Test::Unit::Error"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:6(title)
-msgid "Module: Test::Unit &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:17(script)
-#: doc/reference/en/ActiveSupport/TestCase.html:17(script)
 msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = '../'; "
-"framesUrl = \"../frames.html#!\" + escape(window.location.href);"
+"<pre>require \"test/unit/active_support\"\n"
+"require \"active_support\"\n"
+"</pre>"
 msgstr ""
 
-#: doc/reference/en/Test/Unit.html:34(a)
-msgid "Index (U)"
+msgid "Now you can use full test-unit 3.x features with ActiveSupport."
 msgstr ""
 
-#: doc/reference/en/Test/Unit.html:66(h1)
-msgid "Module: Test::Unit"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:87(h2)
-#: doc/reference/en/top-level-namespace.html:84(h2)
-#: doc/reference/en/Test.html:107(h2)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:87(h2)
-msgid "Defined Under Namespace"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:91(strong)
-#: doc/reference/en/top-level-namespace.html:88(strong)
-#: doc/reference/en/Test.html:111(strong)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:91(strong)
-msgid "Modules:"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:95(strong)
-msgid "Classes:"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:88(p)
 msgid ""
-"<placeholder-1/> <span class=\"object_link\"><placeholder-2/></span>\n"
-"    \n"
-"  \n"
-"    \n"
-"      <placeholder-3/> <span class=\"object_link\"><placeholder-4/></span>, "
-"<span class=\"object_link\"><placeholder-5/></span>"
+"<pre>require 'test/unit/active_support'\n"
+"# require \"active_support\" ..."
 msgstr ""
 
-#: doc/reference/en/file.news.html:6(title)
-msgid "File: news &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/file.news.html:17(script)
-#: doc/reference/en/top-level-namespace.html:17(script)
-#: doc/reference/en/Test.html:17(script)
-#: doc/reference/en/index.html:17(script)
-#: doc/reference/en/MiniTest.html:17(script)
-#: doc/reference/en/file.README.html:17(script)
-#: doc/reference/en/_index.html:15(script)
 msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = ''; framesUrl = "
-"\"frames.html#!\" + escape(window.location.href);"
+"class YourTest < ActiveSupport::TestCase\n"
+"  # ...\n"
+"end\n"
+"</pre>"
 msgstr ""
 
-#: doc/reference/en/file.news.html:34(a)
-#: doc/reference/en/top-level-namespace.html:34(a)
-#: doc/reference/en/index.html:34(a) doc/reference/en/file.README.html:34(a)
-msgid "Index"
+msgid "h2. License"
 msgstr ""
 
-#: doc/reference/en/file.news.html:35(span)
-msgid "File: news"
-msgstr ""
-
-#: doc/reference/en/file.news.html:64(h1)
-msgid "News"
-msgstr "お知らせ"
-
-#: doc/reference/en/file.news.html:65(h2)
-msgid "1.0.1 – 2012-07-20"
-msgstr ""
-
-#: doc/reference/en/file.news.html:66(p)
-msgid "ActiveSupport 2.3.14 support improved release."
-msgstr "ActiveSupport 2.3.14サポートを強化したリリース。"
-
-#: doc/reference/en/file.news.html:67(h3)
-msgid "Improvements"
-msgstr "改良"
-
-#: doc/reference/en/file.news.html:69(li)
-msgid ""
-"Supported ActiveSupport 2.3.14. [GitHub#1] [GitHub#2] [Reported by Michael "
-"Grosser]"
-msgstr "ActiveSupport 2.3.14に対応。 [GitHub#1] [GitHub#2] [Michael Grosserさんが報告]"
-
-#: doc/reference/en/file.news.html:73(h3) doc/reference/en/index.html:88(h2)
-#: doc/reference/en/file.README.html:88(h2)
-msgid "Thanks"
-msgstr "感謝"
-
-#: doc/reference/en/file.news.html:75(li) doc/reference/en/index.html:90(li)
-#: doc/reference/en/file.README.html:90(li)
-msgid "Michael Grosser"
-msgstr "Michael Grosserさん"
-
-#: doc/reference/en/file.news.html:77(h2)
-msgid "1.0.0 – 2012-06-03"
-msgstr ""
-
-#: doc/reference/en/file.news.html:78(p)
-msgid "The first release!!!"
-msgstr "最初のリリース！"
-
-#: doc/reference/en/top-level-namespace.html:6(title)
-msgid "Top Level Namespace &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:37(span)
-#: doc/reference/en/top-level-namespace.html:66(h1)
-#: doc/reference/en/class_list.html:47(a)
-#: doc/reference/en/class_list.html:48(small)
-msgid "Top Level Namespace"
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:88(a)
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/MiniTest.html:37(span) doc/reference/en/_index.html:151(a)
-msgid "MiniTest"
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:85(p)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:88(p)
-msgid ""
-"<placeholder-1/> <span class=\"object_link\"><placeholder-2/></span>, <span "
-"class=\"object_link\"><placeholder-3/></span>"
-msgstr ""
-
-#: doc/reference/en/method_list.html:21(script)
-#: doc/reference/en/class_list.html:21(script)
-#: doc/reference/en/file_list.html:21(script)
-msgid ""
-"if (window.top.frames.main) { document.getElementById('base_target').target "
-"= 'main'; document.body.className = 'frames'; }"
-msgstr ""
-
-#: doc/reference/en/method_list.html:31(a)
-#: doc/reference/en/class_list.html:31(a)
-#: doc/reference/en/file_list.html:31(a)
-msgid "Classes"
-msgstr ""
-
-#: doc/reference/en/method_list.html:35(a)
-#: doc/reference/en/class_list.html:35(a)
-#: doc/reference/en/file_list.html:35(a)
-msgid "Methods"
-msgstr ""
-
-#: doc/reference/en/method_list.html:39(a)
-#: doc/reference/en/class_list.html:39(a)
-#: doc/reference/en/file_list.html:39(a)
-msgid "Files"
-msgstr ""
-
-#: doc/reference/en/method_list.html:44(div)
-#: doc/reference/en/class_list.html:44(div)
-#: doc/reference/en/file_list.html:44(div)
-msgid "Search: <input type=\"text\"/>"
-msgstr ""
-
-#: doc/reference/en/method_list.html:50(a)
-msgid "#valid?"
-msgstr ""
-
-#: doc/reference/en/method_list.html:52(small)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/index.html:67(code)
-#: doc/reference/en/ActiveSupport/TestCase.html:81(li)
-#: doc/reference/en/file.README.html:67(code)
-msgid "ActiveSupport::TestCase"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(li)
-msgid ""
-"<span class=\"object_link\"><placeholder-1/></span> &lt; "
-"Object<placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/class_list.html:48(small)
-msgid "ActiveSupport::Testing::SetupAndTeardown"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(small)
-msgid "ActiveSupport::Testing"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:91(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(span)
-#: doc/reference/en/_index.html:106(a)
-msgid "ClassMethods"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:91(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(span)
-#: doc/reference/en/_index.html:136(a)
-msgid "ForClassicTestUnit"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(small)
-msgid "Test::Unit"
-msgstr ""
-
-#: doc/reference/en/Test.html:6(title)
-msgid "Module: Test &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/Test.html:66(h1)
-msgid "Module: Test"
-msgstr ""
-
-#: doc/reference/en/Test.html:87(h2)
-msgid "Overview"
-msgstr ""
-
-#: doc/reference/en/Test.html:89(p)
-msgid "Copyright © 2012 Kouhei Sutou &lt;kou@clear-code.com&gt;"
-msgstr ""
-
-#: doc/reference/en/Test.html:91(span) doc/reference/en/Test.html:96(span)
-#: doc/reference/en/Test.html:98(span)
-msgid "GNU"
-msgstr ""
-
-#: doc/reference/en/Test.html:90(p)
-msgid ""
-"This library is free software; you can redistribute it and/or modify it "
-"under the terms of the <placeholder-1/> Lesser General Public License as "
-"published by the Free Software Foundation; either version 2.1 of the "
-"License, or (at your option) any later version."
-msgstr ""
-
-#: doc/reference/en/Test.html:95(span)
-msgid "WITHOUT"
-msgstr ""
-
-#: doc/reference/en/Test.html:95(span)
-msgid "ANY"
-msgstr ""
-
-#: doc/reference/en/Test.html:95(span)
-msgid "WARRANTY"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "MERCHANTABILITY"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "FITNESS"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "FOR"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "PARTICULAR"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "PURPOSE"
-msgstr ""
-
-#: doc/reference/en/Test.html:94(p)
-msgid ""
-"This library is distributed in the hope that it will be useful, but "
-"<placeholder-1/> <placeholder-2/> <placeholder-3/>; without even the implied "
-"warranty of <placeholder-4/> or <placeholder-5/> <placeholder-6/> A "
-"<placeholder-7/> <placeholder-8/>. See the <placeholder-9/> Lesser General "
-"Public License for more details."
-msgstr ""
-
-#: doc/reference/en/Test.html:100(span)
-msgid "USA"
-msgstr ""
-
-#: doc/reference/en/Test.html:98(p)
-msgid ""
-"You should have received a copy of the <placeholder-1/> Lesser General "
-"Public License along with this library; if not, write to the Free Software "
-"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 "
-"<placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/index.html:6(title)
-#: doc/reference/en/file.README.html:6(title)
-msgid "File: README &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/index.html:35(span)
-#: doc/reference/en/file.README.html:35(span)
-msgid "File: README"
-msgstr ""
-
-#: doc/reference/en/index.html:64(h1) doc/reference/en/file.README.html:64(h1)
-#: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
-#: doc/reference/en/_index.html:59(h1)
-msgid "test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/index.html:65(a) doc/reference/en/file.README.html:65(a)
-msgid "Web site"
-msgstr ""
-
-#: doc/reference/en/index.html:66(h2) doc/reference/en/file.README.html:66(h2)
-msgid "Description"
-msgstr ""
-
-#: doc/reference/en/index.html:67(p) doc/reference/en/file.README.html:67(p)
-msgid ""
-"test-unit-activesupport is an ActiveSupport adapter for test-unit 2. You can "
-"use full test-unit 2 features with <placeholder-1/>."
-msgstr ""
-
-#: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
-msgid "Install"
-msgstr ""
-
-#: doc/reference/en/index.html:69(code) doc/reference/en/index.html:70(span)
-#: doc/reference/en/index.html:74(span)
-#: doc/reference/en/file.README.html:69(code)
-#: doc/reference/en/file.README.html:70(span)
-#: doc/reference/en/file.README.html:74(span)
-msgid "test/unit/active_support"
-msgstr ""
-
-#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
-msgid "Require <placeholder-1/> before using ActiveSupport:"
-msgstr ""
-
-#: doc/reference/en/index.html:70(span) doc/reference/en/index.html:71(span)
-#: doc/reference/en/index.html:74(span)
-#: doc/reference/en/file.README.html:70(span)
-#: doc/reference/en/file.README.html:71(span)
-#: doc/reference/en/file.README.html:74(span)
-msgid "require"
-msgstr ""
-
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
-msgid "active_support"
-msgstr ""
-
-#: doc/reference/en/index.html:73(p) doc/reference/en/file.README.html:73(p)
-msgid "Now you can use full test-unit 2.x features with ActiveSupport."
-msgstr ""
-
-#: doc/reference/en/index.html:74(span)
-#: doc/reference/en/file.README.html:74(span)
-msgid "'"
-msgstr ""
-
-#: doc/reference/en/index.html:75(span)
-#: doc/reference/en/file.README.html:75(span)
-msgid "# require \"active_support\" ..."
-msgstr ""
-
-#: doc/reference/en/index.html:77(span)
-#: doc/reference/en/file.README.html:77(span)
-msgid "class"
-msgstr ""
-
-#: doc/reference/en/index.html:77(span)
-#: doc/reference/en/file.README.html:77(span)
-msgid "YourTest"
-msgstr ""
-
-#: doc/reference/en/index.html:77(span)
-#: doc/reference/en/file.README.html:77(span)
-msgid "&lt;"
-msgstr ""
-
-#: doc/reference/en/index.html:77(span)
-#: doc/reference/en/MiniTest.html:95(span)
-#: doc/reference/en/file.README.html:77(span)
-msgid "::"
-msgstr ""
-
-#: doc/reference/en/index.html:78(span)
-#: doc/reference/en/file.README.html:78(span)
-msgid "# ..."
-msgstr ""
-
-#: doc/reference/en/index.html:79(span)
-#: doc/reference/en/ActiveSupport/TestCase.html:196(span)
-#: doc/reference/en/file.README.html:79(span)
-msgid "end"
-msgstr ""
-
-#: doc/reference/en/index.html:81(h2) doc/reference/en/file.README.html:81(h2)
-msgid "License"
-msgstr ""
-
-#: doc/reference/en/index.html:82(p) doc/reference/en/file.README.html:82(p)
 msgid "LGPLv2.1 or later."
 msgstr ""
 
-#: doc/reference/en/index.html:83(p) doc/reference/en/file.README.html:83(p)
 msgid ""
-"(Kouhei Sutou has a right to change the license including contributed "
-"patches.)"
+"(Kouhei Sutou has a right to change the license including contributed patches."
+")"
 msgstr ""
 
-#: doc/reference/en/index.html:84(h2) doc/reference/en/file.README.html:84(h2)
-msgid "Authors"
+msgid "h2. Authors"
 msgstr ""
 
-#: doc/reference/en/index.html:86(li) doc/reference/en/file.README.html:86(li)
-msgid "Kouhei Sutou"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:6(title)
-msgid "Module: MiniTest &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:34(a)
-msgid "Index (M)"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:66(h1)
-msgid "Module: MiniTest"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:92(dt)
-msgid "Assertion ="
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:95(span)
-msgid "Assertions"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:6(title)
 msgid ""
-"Module: ActiveSupport::Testing::SetupAndTeardown &mdash; test-unit-"
-"activesupport"
+"* Kouhei Sutou\n"
+"* Haruka Yoshihara"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:34(a)
-msgid "Index (S)"
+msgid "h2. Thanks"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:35(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:35(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:35(span)
-msgid "Testing"
+msgid "* Michael Grosser"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:37(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:35(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:35(a)
-#: doc/reference/en/_index.html:164(a)
-msgid "SetupAndTeardown"
+msgid "h1. News"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:66(h1)
-msgid "Module: ActiveSupport::Testing::SetupAndTeardown"
+msgid "h2(#1-0-2). 1.0.2 - 2014-09-04"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:6(title)
+msgid "ActiveSupport 4.0.0 support improved release."
+msgstr ""
+
+msgid "h3. Improvements"
+msgstr ""
+
 msgid ""
-"Module: ActiveSupport::Testing::SetupAndTeardown::ClassMethods &mdash; test-"
-"unit-activesupport"
+"* Supported ActiveSupport 4.0.0 later.\n"
+"  Rails <~ 3.2 isn't supported in this release, so if you use it,\n"
+"  please use test-unit-activesupport 1.0.1."
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:17(script)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:17(script)
+msgid "h2(#1-0-1). 1.0.1 - 2012-07-20"
+msgstr ""
+
+msgid "ActiveSupport 2.3.14 support improved release."
+msgstr ""
+
 msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = '../../../'; "
-"framesUrl = \"../../../frames.html#!\" + escape(window.location.href);"
+"* Supported ActiveSupport 2.3.14.\n"
+"  [GitHub#1] [GitHub#2]\n"
+"  [Reported by Michael Grosser]"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:34(a)
-msgid "Index (C)"
+msgid "h3. Thanks"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:66(h1)
-msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ClassMethods"
+msgid "h2(#1-0-0). 1.0.0 - 2012-06-03"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:6(title)
+msgid "The first release!!!"
+msgstr ""
+
+# Test
+msgid "Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>"
+msgstr ""
+
+# Test
 msgid ""
-"Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit &mdash; "
-"test-unit-activesupport"
+"This library is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU Lesser General Public\n"
+"License as published by the Free Software Foundation; either\n"
+"version 2.1 of the License, or (at your option) any later version."
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:34(a)
-msgid "Index (F)"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:66(h1)
-msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:6(title)
-msgid "Class: ActiveSupport::TestCase &mdash; test-unit-activesupport"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:66(h1)
-msgid "Class: ActiveSupport::TestCase"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:112(a)
-msgid "collapse"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:112(small)
-#: doc/reference/en/ActiveSupport/TestCase.html:171(span)
-msgid "(<placeholder-1/>)"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:110(h2)
-msgid "Instance Method Summary <placeholder-1/>"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:120(strong)
-#: doc/reference/en/ActiveSupport/TestCase.html:151(strong)
-#: doc/reference/en/ActiveSupport/TestCase.html:193(span)
-msgid "valid?"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:120(a)
-msgid "- (Boolean) <placeholder-1/>"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:145(h2)
-msgid "Instance Method Details"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:151(tt)
-#: doc/reference/en/ActiveSupport/TestCase.html:171(tt)
-msgid "Boolean"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:149(h3)
-msgid "- (<placeholder-1/>) <placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:165(p)
-msgid "Returns:"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:182(pre)
-msgid "55 56 57 58"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:191(span)
-msgid "# File 'lib/test/unit/active_support.rb', line 55"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:193(span)
-msgid "def"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-msgid "return"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-msgid "false"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-msgid "if"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-msgid "@method_name"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-msgid "=="
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:194(span)
-msgid "default_test"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/TestCase.html:195(span)
-msgid "super"
-msgstr ""
-
-#: doc/reference/en/frames.html:16(frameset)
+# Test
 msgid ""
-"' + '<frame name=\"list\" src=\"class_list.html\"/>' + '<frame name=\"main\" "
-"src=\"' + name + '\"/>' + '"
+"This library is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n"
+"Lesser General Public License for more details."
 msgstr ""
 
-#: doc/reference/en/frames.html:9(script)
+# Test
 msgid ""
-"window.onload = function() { var match = window.location.hash.match(/^#!(."
-"+)/); var name = 'index.html'; if (match) { name = unescape(match[1]); } "
-"document.writeln('<placeholder-1/>'); }"
-msgstr ""
-
-#: doc/reference/en/file_list.html:49(a) doc/reference/en/_index.html:67(a)
-msgid "README"
-msgstr ""
-
-#: doc/reference/en/file_list.html:52(a) doc/reference/en/_index.html:70(a)
-msgid "news"
-msgstr ""
-
-#: doc/reference/en/_index.html:61(h1)
-msgid "Alphabetic Index"
-msgstr ""
-
-#: doc/reference/en/_index.html:63(h2)
-msgid "File Listing"
-msgstr ""
-
-#: doc/reference/en/_index.html:76(h2)
-msgid "Namespace Listing A-Z"
-msgstr ""
-
-#: doc/reference/en/_index.html:87(li)
-msgid "A"
-msgstr ""
-
-#: doc/reference/en/_index.html:93(small)
-#: doc/reference/en/_index.html:123(small)
-#: doc/reference/en/_index.html:193(small)
-msgid "(Test::Unit)"
-msgstr ""
-
-#: doc/reference/en/_index.html:102(li)
-msgid "C"
-msgstr ""
-
-#: doc/reference/en/_index.html:108(small)
-#: doc/reference/en/_index.html:138(small)
-msgid "(ActiveSupport::Testing::SetupAndTeardown)"
-msgstr ""
-
-#: doc/reference/en/_index.html:117(li)
-msgid "E"
-msgstr ""
-
-#: doc/reference/en/_index.html:132(li)
-msgid "F"
-msgstr ""
-
-#: doc/reference/en/_index.html:147(li)
-msgid "M"
-msgstr ""
-
-#: doc/reference/en/_index.html:160(li)
-msgid "S"
-msgstr ""
-
-#: doc/reference/en/_index.html:166(small)
-msgid "(ActiveSupport::Testing)"
-msgstr ""
-
-#: doc/reference/en/_index.html:175(li)
-msgid "T"
-msgstr ""
-
-#: doc/reference/en/_index.html:186(small)
-msgid "(ActiveSupport)"
-msgstr ""
-
-#: doc/reference/en/_index.html:205(li)
-msgid "U"
-msgstr ""
-
-#: doc/reference/en/_index.html:211(small)
-msgid "(Test)"
-msgstr ""
-
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: doc/reference/en/_index.html:0(None)
-msgid "translator-credits"
+"You should have received a copy of the GNU Lesser General Public\n"
+"License along with this library; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
 msgstr ""
