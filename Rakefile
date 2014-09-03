@@ -41,6 +41,8 @@ Gem::PackageTask.new(spec) do |pkg|
 end
 
 document_task = Packnga::DocumentTask.new(spec) do |task|
+  task.original_language = "en"
+  task.translate_language = "ja"
 end
 
 Packnga::ReleaseTask.new(spec) do |task|
