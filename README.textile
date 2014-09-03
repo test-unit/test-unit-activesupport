@@ -33,6 +33,7 @@ LGPLv2.1 or later.
 h2. Authors
 
 * Kouhei Sutou
+* Haruka Yoshihara
 
 h2. Thanks
 
