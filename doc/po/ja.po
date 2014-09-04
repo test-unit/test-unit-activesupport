@@ -80,7 +80,7 @@ msgid "h2. Thanks"
 msgstr "h2. 感謝"
 
 msgid "* Michael Grosser"
-msgstr ""
+msgstr "* Michael Grosserさん"
 
 msgid "h1. News"
 msgstr ""
