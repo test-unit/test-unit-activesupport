@@ -61,12 +61,14 @@ msgid "h2. License"
 msgstr "h2. ライセンス"
 
 msgid "LGPLv2.1 or later."
-msgstr "LGPLv2.1以降。"
+msgstr "LGPLv2.1かそれ以降のバージョン。"
 
 msgid ""
 "(Kouhei Sutou has a right to change the license including contributed patches."
 ")"
-msgstr "(Kouhei Sutou がコントリビュートされたパッチを取り込む権利を所有します。)"
+msgstr ""
+"（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する"
+"権利を持ちます。）"
 
 msgid "h2. Authors"
 msgstr "h2. 作者"
