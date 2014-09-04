@@ -23,18 +23,18 @@ msgid "\"Web site\":https://test-unit.github.io/#test-unit-activesupport"
 msgstr ""
 
 msgid "h2. Description"
-msgstr ""
+msgstr "h2. 説明"
 
 msgid ""
 "test-unit-activesupport is an ActiveSupport adapter for test-unit 3. You can u"
 "se full test-unit 3 features with @ActiveSupport::TestCase@."
-msgstr ""
+msgstr "test-unit-activesupportはtest-unit 3をActiveSupportと使えるようにするためのライブラリです。 @ActiveSupport::TestCase@ でtest-unit 3の機能を使えるようになります。"
 
 msgid "h2. Install"
-msgstr ""
+msgstr "h2. インストール"
 
 msgid "Require @test/unit/active_support@ before using ActiveSupport:"
-msgstr ""
+msgstr "ActiveSupportを使う前に @test/unit/active_support@ をrequireしてください。"
 
 msgid ""
 "<pre>require \"test/unit/active_support\"\n"
@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 
 msgid "Now you can use full test-unit 3.x features with ActiveSupport."
-msgstr ""
+msgstr "こうすることでActiveSupportでtest-unit3.xの機能を使うことができます。"
 
 msgid ""
 "<pre>require 'test/unit/active_support'\n"
@@ -58,18 +58,18 @@ msgid ""
 msgstr ""
 
 msgid "h2. License"
-msgstr ""
+msgstr "h2. ライセンス"
 
 msgid "LGPLv2.1 or later."
-msgstr ""
+msgstr "LGPLv2.1以降。"
 
 msgid ""
 "(Kouhei Sutou has a right to change the license including contributed patches."
 ")"
-msgstr ""
+msgstr "(Kouhei Sutou がコントリビュートされたパッチを取り込む権利を所有します。)"
 
 msgid "h2. Authors"
-msgstr ""
+msgstr "h2. 作者"
 
 msgid ""
 "* Kouhei Sutou\n"
@@ -77,7 +77,7 @@ msgid ""
 msgstr ""
 
 msgid "h2. Thanks"
-msgstr ""
+msgstr "h2. 感謝"
 
 msgid "* Michael Grosser"
 msgstr ""
@@ -89,37 +89,40 @@ msgid "h2(#1-0-2). 1.0.2 - 2014-09-04"
 msgstr ""
 
 msgid "ActiveSupport 4.0.0 support improved release."
-msgstr ""
+msgstr "ActiveSupport 4.0.0をサポートしたリリース。"
 
 msgid "h3. Improvements"
-msgstr ""
+msgstr "h3. 改善"
 
 msgid ""
 "* Supported ActiveSupport 4.0.0 later.\n"
 "  Rails <~ 3.2 isn't supported in this release, so if you use it,\n"
 "  please use test-unit-activesupport 1.0.1."
-msgstr ""
+msgstr "ActiveSupport 4.0.0意向をサポートしました。Rails3.2以下はこのリリースからサポートしません。もしお使いの方はtest-unit-activesupport 1.0.1を使用してください。"
 
 msgid "h2(#1-0-1). 1.0.1 - 2012-07-20"
 msgstr ""
 
 msgid "ActiveSupport 2.3.14 support improved release."
-msgstr ""
+msgstr "ActiveSpport 2.3.14をサポートしたリリース。"
 
 msgid ""
 "* Supported ActiveSupport 2.3.14.\n"
 "  [GitHub#1] [GitHub#2]\n"
 "  [Reported by Michael Grosser]"
 msgstr ""
+"* ActiveSpport 2.3.14をサポートした。\n"
+"  [GitHub#1] [GitHub#2]\n"
+"  [Michael Grosserさんが報告]"
 
 msgid "h3. Thanks"
-msgstr ""
+msgstr "h3. 感謝"
 
 msgid "h2(#1-0-0). 1.0.0 - 2012-06-03"
 msgstr ""
 
 msgid "The first release!!!"
-msgstr ""
+msgstr "最初のリリース!!!"
 
 # Test
 msgid "Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>"
