@@ -18,4 +18,11 @@ class TestAssertions < ActiveSupport::TestCase
   test "assert_not" do
     assert_not(false)
   end
+
+  test "assert_difference" do
+    x = 1
+    assert_difference("x", 1) do
+      x += 1
+    end
+  end
 end
