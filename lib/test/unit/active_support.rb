@@ -18,10 +18,13 @@
 
 require "test-unit"
 require "test/unit/assertion-failed-error"
+require 'active_support/testing/assertions'
 
 module ActiveSupport
   remove_const :TestCase
   class TestCase < ::Test::Unit::TestCase
+    include ActiveSupport::Testing::Assertions
+
     Assertion = ::Test::Unit::AssertionFailedError
   end
 end
