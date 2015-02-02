@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env ruby
 #
-# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2015  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -16,21 +16,10 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-require "test-unit"
-require "test/unit/assertion-failed-error"
-require "active_support/testing/assertions"
+base_dir = File.expand_path("..")
+lib_dir = File.join(base_dir)
+$LOAD_PATH.unshift(lib_dir)
 
-module ActiveSupport
-  if const_defined?(:TestCase)
-    remove_const :TestCase
-  end
+require "test/unit/active_support"
 
-  class TestCase < ::Test::Unit::TestCase
-    include ActiveSupport::Testing::Assertions
-
-    private
-    def mu_pp(object)
-      AssertionMessage.convert(object)
-    end
-  end
-end
+exit(Test::Unit::AutoRunner.run(true))
