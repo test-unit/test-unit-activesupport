@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode: ruby -*-
 #
-# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2015  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -46,4 +46,8 @@ document_task = Packnga::DocumentTask.new(spec) do |task|
 end
 
 Packnga::ReleaseTask.new(spec) do |task|
+end
+
+task :test do
+  ruby("test/run-test.rb")
 end
