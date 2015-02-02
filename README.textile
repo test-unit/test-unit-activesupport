@@ -1,5 +1,7 @@
 h1. test-unit-activesupport
 
+!https://travis-ci.org/test-unit/test-unit-activesupport.svg?branch=master!:https://travis-ci.org/test-unit/test-unit-activesupport
+
 "Web site":https://test-unit.github.io/#test-unit-activesupport
 
 h2. Description
