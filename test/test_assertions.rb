@@ -25,4 +25,10 @@ class TestAssertions < ActiveSupport::TestCase
       x += 1
     end
   end
+
+  test "assert_no_difference" do
+    x = 1
+    assert_no_difference("x") do
+    end
+  end
 end
