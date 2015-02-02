@@ -28,6 +28,5 @@ module ActiveSupport
   class TestCase < ::Test::Unit::TestCase
     include ActiveSupport::Testing::Assertions
 
-    Assertion = ::Test::Unit::AssertionFailedError
   end
 end
