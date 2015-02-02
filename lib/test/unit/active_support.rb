@@ -21,7 +21,10 @@ require "test/unit/assertion-failed-error"
 require 'active_support/testing/assertions'
 
 module ActiveSupport
-  remove_const :TestCase
+  if const_defined?(:TestCase)
+    remove_const :TestCase
+  end
+
   class TestCase < ::Test::Unit::TestCase
     include ActiveSupport::Testing::Assertions
 
