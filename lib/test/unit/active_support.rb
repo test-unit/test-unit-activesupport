@@ -18,7 +18,7 @@
 
 require "test-unit"
 require "test/unit/assertion-failed-error"
-require 'active_support/testing/assertions'
+require "active_support/testing/assertions"
 
 module ActiveSupport
   if const_defined?(:TestCase)
