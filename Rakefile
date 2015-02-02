@@ -24,6 +24,8 @@ require "yard"
 require 'bundler/gem_helper'
 require "packnga"
 
+task :default => :test
+
 base_dir = File.join(File.dirname(__FILE__))
 
 class Bundler::GemHelper
