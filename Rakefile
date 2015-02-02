@@ -21,7 +21,7 @@ require "./lib/test/unit/active_support/version"
 require "rubygems"
 require "rubygems/package_task"
 require "yard"
-require 'bundler/gem_helper'
+require "bundler/gem_helper"
 require "packnga"
 
 task :default => :test
