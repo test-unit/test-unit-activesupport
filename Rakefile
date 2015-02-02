@@ -50,6 +50,7 @@ end
 Packnga::ReleaseTask.new(spec) do |task|
 end
 
+desc "Run test"
 task :test do
   ruby("test/run-test.rb")
 end
