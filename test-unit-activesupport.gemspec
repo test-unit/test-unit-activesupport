@@ -31,11 +31,11 @@ Gem::Specification.new do |spec|
   spec.authors = ["Kouhei Sutou"]
   spec.email = ["kou@clear-code.com"]
   spec.homepage = "https://github.com/test-unit/test-unit-activesupport"
-  entries = File.read("README.textile").split(/^h2\.\s(.*)$/)
+  entries = File.read("README.md").split(/^##\s(.*)$/)
   description = clean_white_space.call(entries[entries.index("Description") + 1])
   spec.summary, spec.description, = description.split(/\n\n+/, 3)
   spec.license = "LGPLv2 or later"
-  spec.files = ["COPYING", "Gemfile", "Rakefile", "README.textile"]
+  spec.files = ["COPYING", "Gemfile", "Rakefile", "README.md"]
   spec.files += Dir.glob("lib/**/*.rb")
   spec.files += Dir.glob("doc/text/**/*.textile")
   spec.test_files = Dir.glob("test/**/*.rb")
