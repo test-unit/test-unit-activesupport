@@ -133,7 +133,7 @@ msgid ""
 "* Supported ActiveSupport 4.0.0 later.\n"
 "  Rails <~ 3.2 isn't supported in this release, so if you use it,\n"
 "  please use test-unit-activesupport 1.0.1."
-msgstr "ActiveSupport 4.0.0意向をサポートしました。Rails3.2以下はこのリリースからサポートしません。もしお使いの方はtest-unit-activesupport 1.0.1を使用してください。"
+msgstr "ActiveSupport 4.0.0以降をサポートしました。Rails3.2以下はこのリリースからサポートしません。もしお使いの方はtest-unit-activesupport 1.0.1を使用してください。"
 
 msgid "h2(#1-0-1). 1.0.1 - 2012-07-20"
 msgstr ""
