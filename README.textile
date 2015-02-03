@@ -40,3 +40,4 @@ h2. Authors
 h2. Thanks
 
 * Michael Grosser
+* Shinta Koyanagi
