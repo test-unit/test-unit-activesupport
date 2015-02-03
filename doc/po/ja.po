@@ -1,13 +1,13 @@
 # Japanese translations for PACKAGE package.
-# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-09-03 23:29+0900\n"
+"PO-Revision-Date: 2015-02-03 21:56+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -17,6 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "h1. test-unit-activesupport"
+msgstr ""
+
+msgid ""
+"!https://travis-ci.org/test-unit/test-unit-activesupport.svg?branch=master!:ht"
+"tps://travis-ci.org/test-unit/test-unit-activesupport"
 msgstr ""
 
 msgid "\"Web site\":https://test-unit.github.io/#test-unit-activesupport"
@@ -33,8 +38,8 @@ msgstr "test-unit-activesupportはtest-unit 3をActiveSupportと使えるよう�
 msgid "h2. Install"
 msgstr "h2. インストール"
 
-msgid "Require @test/unit/active_support@ before using ActiveSupport:"
-msgstr "ActiveSupportを使う前に @test/unit/active_support@ をrequireしてください。"
+msgid "Require @test/unit/active_support@:"
+msgstr "@test/unit/acitve_support@ をrequireしてください。"
 
 msgid ""
 "<pre>require \"test/unit/active_support\"\n"
@@ -46,8 +51,8 @@ msgid "Now you can use full test-unit 3.x features with ActiveSupport."
 msgstr "こうすることでActiveSupportでtest-unit3.xの機能を使うことができます。"
 
 msgid ""
-"<pre>require 'test/unit/active_support'\n"
-"# require \"active_support\" ..."
+"<pre>require \"test/unit/active_support\"\n"
+"require \"active_support\""
 msgstr ""
 
 msgid ""
@@ -86,6 +91,34 @@ msgstr "* Michael Grosserさん"
 
 msgid "h1. News"
 msgstr ""
+
+msgid "h2(#1-0-3). 1.0.3 - 2015-02-03"
+msgstr ""
+
+msgid "Bug fix release."
+msgstr "バグフィックスリリース。"
+
+msgid "h3. Fixes"
+msgstr "h3. 修正"
+
+msgid ""
+"* Supported below missing assertions from @ActiveSupport::Testing::Assertions@.\n"
+"  [GitHub#4][Patch by Shinta Koyanagi]\n"
+"** @assert_not@\n"
+"** @assert_difference@\n"
+"** @assert_no_difference@"
+msgstr ""
+"* @ActiveSupport::Testing::Assertions@ にある次のアサーションメソッドをサポートできていなかったのをサポートするようにしました。\n"
+"  [GitHub#4][Shinta Koyanagiさんがパッチ提供]\n"
+"** @assert_not@\n"
+"** @assert_difference@\n"
+"** @assert_no_difference@"
+
+msgid "h3. Thanks"
+msgstr "h3. 感謝"
+
+msgid "* Shinta Koyanagi"
+msgstr "* Shinta Koyanagiさん"
 
 msgid "h2(#1-0-2). 1.0.2 - 2014-09-04"
 msgstr ""
