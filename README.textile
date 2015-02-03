@@ -18,7 +18,7 @@ require "active_support"
 
 Now you can use full test-unit 3.x features with ActiveSupport.
 
-<pre>require 'test/unit/active_support'
+<pre>require "test/unit/active_support"
 require "active_support"
 
 class YourTest < ActiveSupport::TestCase
