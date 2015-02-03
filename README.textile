@@ -10,7 +10,7 @@ test-unit-activesupport is an ActiveSupport adapter for test-unit 3. You can use
 
 h2. Install
 
-Require @test/unit/active_support@ before using ActiveSupport:
+Require @test/unit/active_support@:
 
 <pre>require "test/unit/active_support"
 require "active_support"
@@ -19,7 +19,7 @@ require "active_support"
 Now you can use full test-unit 3.x features with ActiveSupport.
 
 <pre>require 'test/unit/active_support'
-# require "active_support" ...
+require "active_support"
 
 class YourTest < ActiveSupport::TestCase
   # ...
