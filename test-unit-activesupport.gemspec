@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
   spec.license = "LGPLv2 or later"
   spec.files = ["COPYING", "Gemfile", "Rakefile", "README.md"]
   spec.files += Dir.glob("lib/**/*.rb")
-  spec.files += Dir.glob("doc/text/**/*.textile")
+  spec.files += Dir.glob("doc/text/**/*.md")
   spec.test_files = Dir.glob("test/**/*.rb")
 
   spec.add_runtime_dependency("activesupport")
