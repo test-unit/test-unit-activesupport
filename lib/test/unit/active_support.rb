@@ -17,6 +17,13 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 require "test-unit"
+# Prevent AS/test_case.rb from being required after this
+unless $LOADED_FEATURES.any? {|lf| lf.end_with? "active_support/test_case.rb"}
+  $LOAD_PATH.reverse_each do |lp|
+    path = File.join(lp, "active_support/test_case.rb")
+    $LOADED_FEATURES << path if File.exist?(path)
+  end
+end
 require "active_support/testing/assertions"
 
 module ActiveSupport
