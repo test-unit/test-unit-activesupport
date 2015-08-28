@@ -6,7 +6,9 @@ Bug fix release.
 
 ### Fixes
 
-  * Supported below missing assertions from `ActiveSupport::Testing::Assertions`.[GitHub#4][Patch by Shinta Koyanagi]
+  * Supported below missing assertions from
+    `ActiveSupport::Testing::Assertions`.
+    [GitHub#4][Patch by Shinta Koyanagi]
      * `assert_not`
      * `assert_difference`
      * `assert_no_difference`
