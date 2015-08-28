@@ -1,5 +1,20 @@
 # News
 
+## 1.0.4 - 2015-08-28 {#1-0-4}
+
+Action Mailer support fix release.
+
+### Improvements
+
+  * Migrated document markup to Markdown from Textile.
+    [GitHub#5][GitHub#7][GitHub#8][Patch by Shinta Koyanagi]
+  * Supported Action Mailer. [GitHub#9][Patch by Akira Matsuda]
+
+### Thanks
+
+  * Shinta Koyanagi
+  * Akira Matsuda
+
 ## 1.0.3 - 2015-02-03 {#1-0-3}
 
 Bug fix release.
