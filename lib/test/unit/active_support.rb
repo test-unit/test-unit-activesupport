@@ -17,14 +17,18 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 require "test-unit"
-# Prevent AS/test_case.rb from being required after this
-unless $LOADED_FEATURES.any? {|lf| lf.end_with? "active_support/test_case.rb"}
-  $LOAD_PATH.reverse_each do |lp|
-    path = File.join(lp, "active_support/test_case.rb")
-    $LOADED_FEATURES << path if File.exist?(path)
+require "active_support/testing/assertions"
+$LOADED_FEATURES.size.times do |i|
+  feature = $LOADED_FEATURES[i]
+  if feature.end_with?("active_support/testing/assertions.rb")
+    as_test_case_feature = feature.gsub(/testing\/assertions.rb\z/,
+                                        "test_case.rb")
+    $LOADED_FEATURES[i, 0] = as_test_case_feature
+    break
+  elsif feature.end_with?("active_support/test_case.rb")
+    break
   end
 end
-require "active_support/testing/assertions"
 
 module ActiveSupport
   if const_defined?(:TestCase)
