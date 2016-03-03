@@ -31,4 +31,12 @@ class TestAssertions < ActiveSupport::TestCase
     assert_no_difference("x") do
     end
   end
+
+  test "message method" do
+    proc = self.message("test","bernd") do
+      "hans"
+    end
+
+    assert_equal "test.\nhansbernd", proc.call
+  end
 end
