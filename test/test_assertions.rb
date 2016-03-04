@@ -33,10 +33,10 @@ class TestAssertions < ActiveSupport::TestCase
   end
 
   test "message method" do
-    proc = message("test", "bernd") do
+    delayed_message = message("test", "bernd") do
       "hans"
     end
 
-    assert_equal "test.\nhansbernd", proc.call
+    assert_equal "test.\nhansbernd", delayed_message.call
   end
 end
