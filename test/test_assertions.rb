@@ -33,7 +33,7 @@ class TestAssertions < ActiveSupport::TestCase
   end
 
   test "message method" do
-    proc = self.message("test", "bernd") do
+    proc = message("test", "bernd") do
       "hans"
     end
 
