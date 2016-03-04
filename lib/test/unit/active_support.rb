@@ -46,9 +46,15 @@ module ActiveSupport
     # method which is not defined in test-unit 3
     def message(msg=nil, ending=nil, &default)
       lambda do
-        msg = msg.call.chomp(".") if Proc === msg
-        custom_message = "#{msg}.\n" unless msg.nil? or msg.to_s.empty?
-        "#{custom_message}#{default.call}#{ending || "."}"
+        msg = msg.call if msg.respond_to?(:call)
+        msg = msg.to_s.chomp(".") unless msg.nil?
+        if msg.nil? or msg.empty?
+          custom_message = ""
+        else
+          custom_message = "#{msg}.\n"
+        end
+        ending ||= "."
+        "#{custom_message}#{default.call}#{ending}"
       end
     end
 
