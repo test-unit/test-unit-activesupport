@@ -5,6 +5,8 @@ rvm:
   - 2.2
   - rbx-2
   - jruby
+before_install:
+  - gem update bundler
 matrix:
   allow_failures:
     - rvm: rbx-2
