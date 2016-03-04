@@ -37,6 +37,6 @@ class TestAssertions < ActiveSupport::TestCase
       "hans"
     end
 
-    assert_equal "test.\nhansbernd", delayed_message.call
+    assert_equal("test.\nhansbernd", delayed_message.call)
   end
 end
