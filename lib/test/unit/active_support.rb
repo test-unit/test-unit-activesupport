@@ -38,10 +38,12 @@ module ActiveSupport
   class TestCase < ::Test::Unit::TestCase
     include ActiveSupport::Testing::Assertions
 
-    # shoulda needs ActiveSupport::TestCase::Assertion, which is not set in test-unit 3
+    # shoulda needs ActiveSupport::TestCase::Assertion, which is not
+    # set in test-unit 3
     Assertion = Test::Unit::AssertionFailedError
 
-    # rails 4.1 (action dispatch assertions) needs the 'message' method which is not defined in test-unit 3
+    # rails 4.1 (action dispatch assertions) needs the 'message'
+    # method which is not defined in test-unit 3
     def message msg = nil, ending = nil, &default
       proc {
         msg = msg.call.chomp(".") if Proc === msg
