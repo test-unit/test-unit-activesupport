@@ -1,5 +1,18 @@
 # News
 
+## 1.0.5 - 2016-03-05 {#1-0-5}
+
+Action Dispatch support fix release.
+
+### Improvements
+
+  * Supported Action Dispatch.
+    [GitHub#10][Patch by Philip Müller]
+
+### Thanks
+
+  * Philip Müller
+
 ## 1.0.4 - 2015-08-28 {#1-0-4}
 
 Action Mailer support fix release.
