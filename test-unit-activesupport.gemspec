@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   entries = File.read("README.md").split(/^##\s(.*)$/)
   description = clean_white_space.call(entries[entries.index("Description") + 1])
   spec.summary, spec.description, = description.split(/\n\n+/, 3)
-  spec.license = "LGPLv2 or later"
+  spec.license = "LGPL-2.1"
   spec.files = ["COPYING", "Gemfile", "Rakefile", "README.md"]
   spec.files += Dir.glob("lib/**/*.rb")
   spec.files += Dir.glob("doc/text/**/*.md")
