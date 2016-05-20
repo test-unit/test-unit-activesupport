@@ -18,15 +18,17 @@
 
 require "test-unit"
 require "active_support/testing/assertions"
-$LOADED_FEATURES.size.times do |i|
-  feature = $LOADED_FEATURES[i]
-  if feature.end_with?("active_support/testing/assertions.rb")
-    as_test_case_feature = feature.gsub(/testing\/assertions.rb\z/,
+
+as_test_case_name = "active_support/test_case.rb"
+unless $LOADED_FEATURES.any? {|feature| feature.end_with?(as_test_case_name)}
+  $LOADED_FEATURES.size.times do |i|
+    feature = $LOADED_FEATURES[i]
+    if feature.end_with?("active_support/testing/assertions.rb")
+      as_test_case_feature = feature.gsub(/testing\/assertions.rb\z/,
                                         "test_case.rb")
-    $LOADED_FEATURES[i, 0] = as_test_case_feature
-    break
-  elsif feature.end_with?("active_support/test_case.rb")
-    break
+      $LOADED_FEATURES[i, 0] = as_test_case_feature
+      break
+    end
   end
 end
 
