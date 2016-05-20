@@ -1,5 +1,18 @@
 # News
 
+## 1.0.6 - 2016-05-20 {#1-0-6}
+
+Rails 5.0 RC1 support release.
+
+### Improves
+
+  * Supported Rails 5.0 RC1.
+    [Reported by Shinta Koyanagi]
+
+### Thanks
+
+  * Shinta Koyanagi
+
 ## 1.0.5 - 2016-03-05 {#1-0-5}
 
 Action Dispatch support fix release.
