@@ -12,16 +12,14 @@ test-unit-activesupport is an ActiveSupport adapter for test-unit 3. You can use
 
 Require `test/unit/active_support`:
 
-```
+```ruby
 require "test/unit/active_support"
 require "active_support"
 ```
 
 Now you can use full test-unit 3.x features with ActiveSupport.
 
-```
-require "test/unit/active_support"
-require "active_support"
+```ruby
 
 class YourTest < ActiveSupport::TestCase
   # ...
