@@ -1,16 +1,8 @@
 rvm:
-  - 2.0.0
-  - 2.1
   - 2.2
   - 2.3.0
-  - rbx-2
-  - jruby
 before_install:
   - gem update bundler
-matrix:
-  allow_failures:
-    - rvm: rbx-2
-    - rvm: jruby
 notifications:
   recipients:
     - test-unit-commit@googlegroups.com
