@@ -1,5 +1,20 @@
 # News
 
+## 1.0.7 - 2016-12-15 {#1-0-7}
+
+### Improvements
+
+  * Supported `ActiveSupport::Testing::FileFixtures`.
+
+### Fixes
+
+  * Removed duplicated description in README.
+    [GitHub#11][Patch by James Pinto]
+
+### Thanks
+
+  * James Pinto
+
 ## 1.0.6 - 2016-05-20 {#1-0-6}
 
 Rails 5.0 RC1 support release.
