@@ -17,7 +17,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 require "test-unit"
+require "active_support"
+require 'active_support/core_ext/class/attribute'
 require "active_support/testing/assertions"
+require 'active_support/testing/file_fixtures'
 
 as_test_case_name = "active_support/test_case.rb"
 unless $LOADED_FEATURES.any? {|feature| feature.end_with?(as_test_case_name)}
@@ -39,6 +42,7 @@ module ActiveSupport
 
   class TestCase < ::Test::Unit::TestCase
     include ActiveSupport::Testing::Assertions
+    include ActiveSupport::Testing::FileFixtures
 
     # shoulda needs ActiveSupport::TestCase::Assertion, which is not
     # set in test-unit 3
