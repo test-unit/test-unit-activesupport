@@ -20,7 +20,11 @@ require "test-unit"
 require "active_support"
 require 'active_support/core_ext/class/attribute'
 require "active_support/testing/assertions"
-require 'active_support/testing/file_fixtures'
+begin
+  require 'active_support/testing/file_fixtures'
+rescue LoadError
+  # Active Support < 5 doesn't have file_fixtures
+end
 
 as_test_case_name = "active_support/test_case.rb"
 unless $LOADED_FEATURES.any? {|feature| feature.end_with?(as_test_case_name)}
@@ -42,7 +46,7 @@ module ActiveSupport
 
   class TestCase < ::Test::Unit::TestCase
     include ActiveSupport::Testing::Assertions
-    include ActiveSupport::Testing::FileFixtures
+    include ActiveSupport::Testing::FileFixtures if defined?(ActiveSupport::Testing::FileFixtures)
 
     # shoulda needs ActiveSupport::TestCase::Assertion, which is not
     # set in test-unit 3
