@@ -4,3 +4,4 @@
 /doc/reference/
 /doc/html/test-unit-activesupport/
 /Gemfile.lock
+/gemfiles/*.lock
