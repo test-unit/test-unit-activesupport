@@ -1,6 +1,9 @@
 rvm:
   - 2.2
   - 2.3.3
+gemfile:
+  - gemfiles/activesupport4.gemfile
+  - gemfiles/activesupport5.gemfile
 before_install:
   - gem update bundler
 notifications:
