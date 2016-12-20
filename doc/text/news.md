@@ -1,5 +1,16 @@
 # News
 
+## 1.0.8 - 2016-12-20 {#1-0-8}
+
+### Fixes
+
+  * Supported Active Support 4 again.
+    [GitHub#12][Patch by Akira Matsuda]
+
+### Thanks
+
+  * Akira Matsuda
+
 ## 1.0.7 - 2016-12-15 {#1-0-7}
 
 ### Improvements
