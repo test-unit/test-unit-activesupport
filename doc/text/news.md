@@ -1,5 +1,16 @@
 # News
 
+## 1.0.9 - 2017-07-26 {#1-0-9}
+
+### Improvements
+
+  * Supported `#before_setup` and `#after_teardown`.
+    [GitHub:test-unit-rails#15][Reported by naofumi-fujii]
+
+### Thanks
+
+  * naofumi-fujii
+
 ## 1.0.8 - 2016-12-20 {#1-0-8}
 
 ### Fixes
