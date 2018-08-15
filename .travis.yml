@@ -7,6 +7,5 @@ gemfile:
 before_install:
   - gem update bundler
 notifications:
-  email:
-    recipients:
-      - test-unit-commit@googlegroups.com
+  webhooks:
+    - https://webhook.commit-email.info/
