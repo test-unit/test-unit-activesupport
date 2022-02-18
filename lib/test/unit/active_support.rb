@@ -21,8 +21,11 @@ require "active_support"
 require 'active_support/core_ext/class/attribute'
 require "active_support/testing/assertions"
 begin
+  require "minitest"
   require 'active_support/testing/file_fixtures'
+  require 'active_support/testing/tagged_logging'
 rescue LoadError
+  # Active Support < 4 doesn't have minitest, tagged_logging
   # Active Support < 5 doesn't have file_fixtures
 end
 
@@ -47,6 +50,7 @@ module ActiveSupport
   class TestCase < ::Test::Unit::TestCase
     include ActiveSupport::Testing::Assertions
     include ActiveSupport::Testing::FileFixtures if defined?(ActiveSupport::Testing::FileFixtures)
+    include ActiveSupport::Testing::TaggedLogging if defined?(ActiveSupport::Testing::TaggedLogging)
 
     # shoulda needs ActiveSupport::TestCase::Assertion, which is not
     # set in test-unit 3

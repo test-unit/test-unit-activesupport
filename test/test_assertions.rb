@@ -39,4 +39,15 @@ class TestAssertions < ActiveSupport::TestCase
 
     assert_equal("test.\nhansbernd", delayed_message.call)
   end
+
+  if ActiveSupport.version >= Gem::Version.new("6.1.0")
+    test "unexpected error" do
+      assert_raise(Minitest::UnexpectedError) do
+        x = 1
+        assert_difference("x") do
+          raise
+        end
+      end
+    end
+  end
 end
