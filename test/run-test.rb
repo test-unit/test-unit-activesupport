@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# Copyright (C) 2015  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2015-2022  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -17,9 +17,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 base_dir = File.expand_path("..")
-lib_dir = File.join(base_dir)
+lib_dir = File.join(base_dir, "lib")
 $LOAD_PATH.unshift(lib_dir)
 
 require "test/unit/active_support"
 
-exit(Test::Unit::AutoRunner.run(true))
+test_dir = File.join(base_dir, "test")
+exit(Test::Unit::AutoRunner.run(true, test_dir))
