@@ -1,5 +1,17 @@
 # News
 
+## 1.1.0 - 2021-02-20 {#1-1-0}
+
+### Improvements
+
+  * Added support for exception in assertions defined by Active
+    Support 6 or later.
+    [GitHub#14][Reported by Yuki Morohoshi]
+
+### Thanks
+
+  * Yuki Morohoshi
+
 ## 1.0.9 - 2017-07-26 {#1-0-9}
 
 ### Improvements
