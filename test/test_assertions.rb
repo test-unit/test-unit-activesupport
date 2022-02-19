@@ -1,4 +1,4 @@
-# Copyright (C) 2015  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2015-2022  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -26,9 +26,27 @@ class TestAssertions < ActiveSupport::TestCase
     end
   end
 
+  test "assert_difference: raise" do
+    x = 1
+    assert_raise(Test::Unit::AssertionFailedError) do
+      assert_difference("x", 1) do
+        raise "Unexpected"
+      end
+    end
+  end
+
   test "assert_no_difference" do
     x = 1
     assert_no_difference("x") do
+    end
+  end
+
+
+  test "assert_nothing_raised" do
+    assert_raise(Test::Unit::AssertionFailedError) do
+      assert_nothing_raised do
+        raise "Unexpected"
+      end
     end
   end
 

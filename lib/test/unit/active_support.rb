@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-#
-# Copyright (C) 2012-2015  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2022  Sutou Kouhei <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -25,6 +23,11 @@ begin
 rescue LoadError
   # Active Support < 5 doesn't have file_fixtures
 end
+begin
+  require "active_support/testing/tagged_logging"
+rescue LoadError
+  # Active Support < 7 doesn't have tagged_logging
+end
 
 as_test_case_name = "active_support/test_case.rb"
 unless $LOADED_FEATURES.any? {|feature| feature.end_with?(as_test_case_name)}
@@ -45,8 +48,11 @@ module ActiveSupport
   end
 
   class TestCase < ::Test::Unit::TestCase
+    alias_method :assert_nothing_raised_original, :assert_nothing_raised
     include ActiveSupport::Testing::Assertions
+    alias_method :assert_nothing_raised, :assert_nothing_raised_original
     include ActiveSupport::Testing::FileFixtures if defined?(ActiveSupport::Testing::FileFixtures)
+    include ActiveSupport::Testing::TaggedLogging if defined?(ActiveSupport::Testing::TaggedLogging)
 
     # shoulda needs ActiveSupport::TestCase::Assertion, which is not
     # set in test-unit 3
@@ -79,6 +85,23 @@ module ActiveSupport
     private
     def mu_pp(object)
       AssertionMessage.convert(object)
+    end
+
+    if private_method_defined?(:_assert_nothing_raised_or_warn)
+      def _assert_nothing_raised_or_warn(assertion, &block)
+        assert_nothing_raised(&block)
+      rescue Test::Unit::AssertionFailedError => e
+        if tagged_logger && tagged_logger.warn?
+          warning = <<~MSG
+            #{self.class} - #{name}: #{e.error.class} raised.
+            If you expected this exception, use `assert_raise` as near to the code that raises as possible.
+            Other block based assertions (e.g. `#{assertion}`) can be used, as long as `assert_raise` is inside their block.
+          MSG
+          tagged_logger.warn warning
+        end
+
+        raise
+      end
     end
   end
 end
