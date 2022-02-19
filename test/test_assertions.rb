@@ -28,7 +28,7 @@ class TestAssertions < ActiveSupport::TestCase
 
   test "assert_difference: raise" do
     x = 1
-    if ActiveSupport.version < Gem::Version.new("2.6")
+    if ActiveSupport.version < Gem::Version.new("6")
       assert_raise(RuntimeError.new("Unexpected")) do
         assert_difference("x", 1) do
           raise "Unexpected"
