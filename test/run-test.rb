@@ -16,7 +16,7 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-base_dir = File.expand_path("..")
+base_dir = File.expand_path(File.join(__dir__, ".."))
 lib_dir = File.join(base_dir, "lib")
 $LOAD_PATH.unshift(lib_dir)
 
