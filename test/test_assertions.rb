@@ -28,9 +28,17 @@ class TestAssertions < ActiveSupport::TestCase
 
   test "assert_difference: raise" do
     x = 1
-    assert_raise(Test::Unit::AssertionFailedError) do
-      assert_difference("x", 1) do
-        raise "Unexpected"
+    if ActiveSupport.version < Gem::Version.new("2.6")
+      assert_raise(RuntimeError.new("Unexpected")) do
+        assert_difference("x", 1) do
+          raise "Unexpected"
+        end
+      end
+    else
+      assert_raise(Test::Unit::AssertionFailedError) do
+        assert_difference("x", 1) do
+          raise "Unexpected"
+        end
       end
     end
   end
