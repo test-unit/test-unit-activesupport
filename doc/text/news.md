@@ -1,5 +1,16 @@
 # News
 
+## 1.1.1 - 2021-03-06 {#1-1-1}
+
+### Fixes
+
+  * Fixed a bug that Ruby < 2.3 support is dropped.
+    [GitHub#15][Patch by Akira Matsuda]
+
+### Thanks
+
+  * Akira Matsuda
+
 ## 1.1.0 - 2021-02-20 {#1-1-0}
 
 ### Improvements
