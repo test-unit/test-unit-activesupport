@@ -92,7 +92,7 @@ module ActiveSupport
         assert_nothing_raised(&block)
       rescue Test::Unit::AssertionFailedError => e
         if tagged_logger && tagged_logger.warn?
-          warning = <<~MSG
+          warning = <<-MSG.gsub(/^\s+/, "")
             #{self.class} - #{name}: #{e.error.class} raised.
             If you expected this exception, use `assert_raise` as near to the code that raises as possible.
             Other block based assertions (e.g. `#{assertion}`) can be used, as long as `assert_raise` is inside their block.
