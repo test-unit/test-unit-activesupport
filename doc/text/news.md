@@ -1,5 +1,18 @@
 # News
 
+## 1.1.2 - 2024-09-25 {#1-1-2}
+
+### Fixes
+
+  * Fixed a bug that unexpected exception warning with tagged logger
+    doesn't work. This is happen with Active Support 7 or later.
+    * GH-17
+    * Reported by akira yamada
+
+### Thanks
+
+  * akira yamada
+
 ## 1.1.1 - 2021-03-06 {#1-1-1}
 
 ### Fixes
