@@ -1,4 +1,4 @@
-# Copyright (C) 2012-2022  Sutou Kouhei <kou@clear-code.com>
+# Copyright (C) 2012-2024  Sutou Kouhei <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -91,9 +91,12 @@ module ActiveSupport
       def _assert_nothing_raised_or_warn(assertion, &block)
         assert_nothing_raised(&block)
       rescue Test::Unit::AssertionFailedError => e
-        if tagged_logger && tagged_logger.warn?
+        if tagged_logger &&
+           tagged_logger.warn? &&
+           e.message.start_with?("Exception raised:\n")
+          inspected_exception = e.message.lines[1] || "Unknown exception"
           warning = <<-MSG.gsub(/^\s+/, "")
-            #{self.class} - #{name}: #{e.error.class} raised.
+            #{self.class} - #{name}: #{inspected_exception.strip} raised.
             If you expected this exception, use `assert_raise` as near to the code that raises as possible.
             Other block based assertions (e.g. `#{assertion}`) can be used, as long as `assert_raise` is inside their block.
           MSG

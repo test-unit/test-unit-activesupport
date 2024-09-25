@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2022  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2015-2024  Sutou Kouhei <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -13,6 +13,8 @@
 # You should have received a copy of the GNU Lesser General Public
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+require "stringio"
 
 class TestAssertions < ActiveSupport::TestCase
   test "assert_not" do
@@ -34,12 +36,26 @@ class TestAssertions < ActiveSupport::TestCase
           raise "Unexpected"
         end
       end
-    else
+    elsif ActiveSupport.version < Gem::Version.new("7")
       assert_raise(Test::Unit::AssertionFailedError) do
         assert_difference("x", 1) do
           raise "Unexpected"
         end
       end
+    else
+      logdev = StringIO.new
+      self.tagged_logger = ActiveSupport::TaggedLogging.new(Logger.new(logdev))
+      assert_raise(Test::Unit::AssertionFailedError) do
+        assert_difference("x", 1) do
+          raise "Unexpected"
+        end
+      end
+      assert_equal(<<-MESSAGE, logdev.string)
+#{self.class} - #{name}: RuntimeError(<Unexpected>) raised.
+If you expected this exception, use `assert_raise` as near to the code that raises as possible.
+Other block based assertions (e.g. `assert_difference`) can be used, as long as `assert_raise` is inside their block.
+
+      MESSAGE
     end
   end
 
