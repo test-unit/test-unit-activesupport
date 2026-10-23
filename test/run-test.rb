@@ -20,6 +20,9 @@ base_dir = File.expand_path(File.join(__dir__, ".."))
 lib_dir = File.join(base_dir, "lib")
 $LOAD_PATH.unshift(lib_dir)
 
+# require logger before requiring rails, or Rails 6 fails to boot
+require "logger"
+
 require "test/unit/active_support"
 
 test_dir = File.join(base_dir, "test")
