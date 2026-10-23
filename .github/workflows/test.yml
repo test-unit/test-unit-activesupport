@@ -10,6 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - name: "Ruby 4.0 & Active Support 8"
+            ruby-version: "4.0"
+            activesupport-version: "8"
           - name: "Ruby 3.4 & Active Support 8"
             ruby-version: "3.4"
             activesupport-version: "8"
