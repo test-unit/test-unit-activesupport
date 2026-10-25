@@ -15,6 +15,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 require "test-unit"
+require "test/unit/active_support/minitest_compatibility"
 require "active_support"
 require 'active_support/core_ext/class/attribute'
 require "active_support/testing/assertions"
@@ -57,6 +58,12 @@ module ActiveSupport
     # shoulda needs ActiveSupport::TestCase::Assertion, which is not
     # set in test-unit 3
     Assertion = Test::Unit::AssertionFailedError
+    # The counterpart of Minitest::UnexpectedError
+    UnexpectedError = Test::Unit::ActiveSupport::MinitestCompatibility::UnexpectedError
+
+    # assertions, failures, skip, capture_io and the other Minitest
+    # methods that Active Support's testing mixins call
+    include Test::Unit::ActiveSupport::MinitestCompatibility
 
     setup :before => :prepend
     def before_setup
